@@ -1,6 +1,0 @@
-@webapilec2_HostAddress = http://localhost:5234
-
-GET {{webapilec2_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
