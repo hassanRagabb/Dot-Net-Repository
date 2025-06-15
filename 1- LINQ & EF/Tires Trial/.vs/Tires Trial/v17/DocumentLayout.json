@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\entitymanagers\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\entitymanagers\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\entitylist\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\entitylist\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A7BC9-9665-4E86-882E-FD41B480C9C8}|DataAccessLayerVid3\\DataAccessLayerVid3.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\dataaccesslayervid3\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2A7BC9-9665-4E86-882E-FD41B480C9C8}|DataAccessLayerVid3\\DataAccessLayerVid3.csproj|solutionrelative:dataaccesslayervid3\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|solutionrelative:ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2A7BC9-9665-4E86-882E-FD41B480C9C8}|DataAccessLayerVid3\\DataAccessLayerVid3.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\dataaccesslayervid3\\dataaccesslayervid3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA2A7BC9-9665-4E86-882E-FD41B480C9C8}|DataAccessLayerVid3\\DataAccessLayerVid3.csproj|solutionrelative:dataaccesslayervid3\\dataaccesslayervid3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\entities\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\entities\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\entities\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\entities\\entitystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\ui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|solutionrelative:ui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{012CE65D-9DA8-4E57-A7CA-DCD3C91E879A}|ui\\ui.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\tires trial\\businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{32E3B76E-5A56-4DF6-8642-034075FC6018}|businessLogicLayer\\businessLogicLayer.csproj|solutionrelative:businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductManager.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\EntityManagers\\ProductManager.cs",
+              "RelativeDocumentMoniker": "businessLogicLayer\\EntityManagers\\ProductManager.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\EntityManagers\\ProductManager.cs",
+              "RelativeToolTip": "businessLogicLayer\\EntityManagers\\ProductManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EntityBase.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\EntityBase.cs",
+              "RelativeDocumentMoniker": "businessLogicLayer\\Entities\\EntityBase.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\EntityBase.cs",
+              "RelativeToolTip": "businessLogicLayer\\Entities\\EntityBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Program.cs",
+              "RelativeDocumentMoniker": "ui\\Program.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Program.cs",
+              "RelativeToolTip": "ui\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:22:09.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Form1.cs",
+              "RelativeDocumentMoniker": "ui\\Form1.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Form1.cs [Design]",
+              "RelativeToolTip": "ui\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:53.145Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Form1.cs",
+              "RelativeDocumentMoniker": "ui\\Form1.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\Form1.cs",
+              "RelativeToolTip": "ui\\Form1.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataAccessLayerVid3",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\DataAccessLayerVid3\\DataAccessLayerVid3.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayerVid3\\DataAccessLayerVid3.csproj",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\DataAccessLayerVid3\\DataAccessLayerVid3.csproj",
+              "RelativeToolTip": "DataAccessLayerVid3\\DataAccessLayerVid3.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T11:20:39.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductList.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\EntityList\\ProductList.cs",
+              "RelativeDocumentMoniker": "businessLogicLayer\\EntityList\\ProductList.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\EntityList\\ProductList.cs",
+              "RelativeToolTip": "businessLogicLayer\\EntityList\\ProductList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:21:02.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataBaseManager.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\DataAccessLayerVid3\\DataBaseManager.cs",
+              "RelativeDocumentMoniker": "DataAccessLayerVid3\\DataBaseManager.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\DataAccessLayerVid3\\DataBaseManager.cs",
+              "RelativeToolTip": "DataAccessLayerVid3\\DataBaseManager.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwKgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "businessLogicLayer\\Entities\\Product.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\Product.cs",
+              "RelativeToolTip": "businessLogicLayer\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EntityState.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\EntityState.cs",
+              "RelativeDocumentMoniker": "businessLogicLayer\\Entities\\EntityState.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\Entities\\EntityState.cs",
+              "RelativeToolTip": "businessLogicLayer\\Entities\\EntityState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:19:51.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\App.config",
+              "RelativeDocumentMoniker": "ui\\App.config",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\App.config",
+              "RelativeToolTip": "ui\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-15T11:25:45.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ui",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\ui.csproj",
+              "RelativeDocumentMoniker": "ui\\ui.csproj",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\ui\\ui.csproj",
+              "RelativeToolTip": "ui\\ui.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T11:22:05.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "businessLogicLayer",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\businessLogicLayer.csproj",
+              "RelativeDocumentMoniker": "businessLogicLayer\\businessLogicLayer.csproj",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\Tires Trial\\businessLogicLayer\\businessLogicLayer.csproj",
+              "RelativeToolTip": "businessLogicLayer\\businessLogicLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T11:20:42.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

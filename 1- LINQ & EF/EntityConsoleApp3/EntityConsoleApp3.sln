@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityConsoleApp3", "EntityConsoleApp3\EntityConsoleApp3.csproj", "{A16774EA-0023-4C4F-9792-A325E2429FB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormEF App", "WinFormEF App\WinFormEF App.csproj", "{D0A24390-6755-4239-A648-EC41D6980111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A16774EA-0023-4C4F-9792-A325E2429FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16774EA-0023-4C4F-9792-A325E2429FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16774EA-0023-4C4F-9792-A325E2429FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16774EA-0023-4C4F-9792-A325E2429FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A24390-6755-4239-A648-EC41D6980111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A24390-6755-4239-A648-EC41D6980111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A24390-6755-4239-A648-EC41D6980111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A24390-6755-4239-A648-EC41D6980111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01053CF8-04B4-45D8-94DF-1B28CE207C48}
+	EndGlobalSection
+EndGlobal

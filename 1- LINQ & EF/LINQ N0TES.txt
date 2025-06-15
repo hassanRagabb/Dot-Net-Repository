@@ -1,0 +1,100 @@
+
+linq :language independent qurey
+/*
+*retrive max 2 in salary need to know the location of data 
+*	1-if data inside object list or array or classes like hashset collection we will do for loop OR while  .. and inside it make filteration with or ..
+*
+*	2-if inside xml need to filter data to learn any langage related to xml like x query or x class or xml based query 
+*
+*	3-if data not on ur level of application not i stack or heap btow3k ex:data inside storage like database like tables need to learn Tsql 
+*	as a developer u have to master 3 or 4 tech to filter data based on the repositry of the data  this is a problem so linq come to solve this 
+*
+*so linq exist indepindently with the repositry we will learn some c# functions and 40 query operator regardless data mwgoda fen 
+*/
+
+/*
+*   Ef go to sql and return the data overhead cost in performance but may ado seatuable in some cases may u just need the transormation from tables to class  only *no need the operation that happend in runtime  *   this called micro orm tools min29
+*   var teens = students.Where(s => s.Age > 14); //Ef runtime will take this code and transform it to  select * from students where age>14 and she will run it in *sql and return the rows and transrom result to *   obj from class student and put them may in list 
+*/
+
+Anonymous types allow you to create objects without explicitly defining a class 
+var person = new { Name = "Hassan", Age = 30 }; //no class called person because u will not use it many times so complilor will genertae it to u and hi will do override 						          					//for eqaul and also for string 
+						//dynamic clr hi check during runtime not compiler belive me hi will be and u have the class (if u need the complier genertae it use var)
+Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+
+the idea of anonymous type is get data from db represent something like max sallary when u get must map all attributs but if u need just some columns from table to put them in look up table 
+u get the data but on the fly u create anonymous type u put inside it some columns u wanted 
+-------------
+linq query against any sequnce :sequnce is class implment IEnumerable<t> interface 
+local sequnce : linq to obj linq to xml or linq to ado in ur memory stack or heap 
+remote sequnce linq to sql or linq to entity 
+sequnce contains elements 
+------calling linq
+IEnumerable<string> filteredNames = Enumerable.Where(names, n => n.StartsWith("S"));
+==
+var filteredNames = Enumerable.Where(names, n => n.StartsWith("S"));
+==
+var filteredNames = names.Where(n => n.Length <= 4);//most used but type of filteredNames is something implemnt Ienumermble  but type is where list iterator
+==
+
+query expression or syntax
+var rr=   from i in lst //must start by from 
+          where i%2 ==1
+	  order by ....
+	  slect i // must end with select used to transformation to new element in output of new datatype
+-----
+var filterednumbers = numbers.Where(n => n%2==0); //just reference drefered excution on list but to have value immediatly use casting with where like tolist
+
+
+aggragation at end of vid 3  //Count sum avg max min
+aggragation at end of vid 3  //Count sum avg max min  // u must implement i comparable if u just need products.Max(); min 1:25 vid 3 or dont implement it and send selector like int highestPrice = products.Max(p => p.Price) //no need to implement icomprable interface
+int totalPrice = products.Sum(p => p.Price);
+int highestPrice = products.Max(p => p.Price)
+
+
+---for generate output sequnce from nothing like range they all static
+generator operators
+var numbers = Enumerable.Range(1, 10); 
+var empty = Enumerable.Empty<int>(); // Or any type: string, Customer, etc.
+var numbers = Enumerable.Repeat(3, 10) // 3 3 3 3 3 3 3 3 3 3 3 3  3 ..
+
+select many take n return n + count  note each element in input deal as subseq output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

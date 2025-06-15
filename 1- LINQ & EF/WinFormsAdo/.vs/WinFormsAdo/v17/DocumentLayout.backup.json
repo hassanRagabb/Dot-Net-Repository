@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\winformsado\\frmsqldataadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmsqldataadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\frmsqldataadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmsqldataadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\winformsado\\frmcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\winformsado\\frmproductsdetaildview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmproductsdetaildview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\frmproductsdetaildview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmproductsdetaildview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\frmcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\frmcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|d:\\null\\dotnet\\3.2-entity framework 6.0\\winformsado\\winformsado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F15B443-3446-435D-8443-A4121820750B}|WinFormsAdo\\WinFormsAdo.csproj|solutionrelative:winformsado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\Program.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Program.cs*",
+              "RelativeToolTip": "WinFormsAdo\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:06:09.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\Form1.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Form1.cs [Design]",
+              "RelativeToolTip": "WinFormsAdo\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T10:52:44.5Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmProductsDetaildView.cs [Design]",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmProductsDetaildView.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmProductsDetaildView.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmProductsDetaildView.cs [Design]",
+              "RelativeToolTip": "WinFormsAdo\\frmProductsDetaildView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.542Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCommand.cs [Design]",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmCommand.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmCommand.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmCommand.cs [Design]",
+              "RelativeToolTip": "WinFormsAdo\\frmCommand.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.56Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmSqlDataAdapter.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmSqlDataAdapter.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmSqlDataAdapter.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmSqlDataAdapter.cs",
+              "RelativeToolTip": "WinFormsAdo\\frmSqlDataAdapter.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:23.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmSqlDataAdapter.cs [Design]",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmSqlDataAdapter.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmSqlDataAdapter.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmSqlDataAdapter.cs [Design]",
+              "RelativeToolTip": "WinFormsAdo\\frmSqlDataAdapter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.52Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmCommand.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmCommand.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmCommand.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmCommand.cs",
+              "RelativeToolTip": "WinFormsAdo\\frmCommand.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAcwMwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmProductsDetaildView.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmProductsDetaildView.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\frmProductsDetaildView.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\frmProductsDetaildView.cs",
+              "RelativeToolTip": "WinFormsAdo\\frmProductsDetaildView.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwF8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsAdo\\Form1.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\3.2-Entity Framework 6.0\\WinFormsAdo\\WinFormsAdo\\Form1.cs",
+              "RelativeToolTip": "WinFormsAdo\\Form1.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwF4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:53:24.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

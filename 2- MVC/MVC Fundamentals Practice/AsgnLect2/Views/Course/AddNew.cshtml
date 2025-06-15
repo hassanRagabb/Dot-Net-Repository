@@ -1,0 +1,101 @@
+﻿
+@model AsgnLect2.Models.Course
+
+
+
+
+<form method="post" asp-action="AddNew">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Degree"></label>
+        <input asp-for="Degree" class="form-control" />
+        <span asp-validation-for="Degree" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="minDegree"></label>
+        <input asp-for="minDegree" class="form-control" />
+        <span asp-validation-for="minDegree" class="text-danger"></span>
+    </div>
+
+        <label asp-for="dept_id">Department name</label>
+        <select asp-for="dept_id" asp-items="ViewBag.Departments" class="form-control">
+            <option value="">-- Select Department --</option>
+        </select>
+        <span asp-validation-for="dept_id" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+
+
+
+
+@* @model Course
+@{
+    ViewData["Title"] = "AddNew";
+    SelectList deptList = new SelectList(ViewBag.Departments, "Id", "Name");
+    SelectList InstructoresList = new SelectList(ViewBag.Instructores, "Id", "Name");
+}
+      
+      
+<h1>AddNew</h1>
+<form method="post" asp-action="AddNew" asp-controller="Course">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <dev>
+           <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+
+    </dev>
+            <dev>
+                <label asp-for="Degree"></label>
+                <input asp-for="Degree" />
+            <span asp-validation-for="Degree" class="text-danger"></span>
+            </dev>
+             <dev>
+                <label asp-for="minDegree"></label>
+                <input asp-for="minDegree" />
+            <span asp-validation-for="minDegree" class="text-danger"></span>
+
+    </dev>
+            <div class="form-group">
+            <label asp-for="dept_id"></label>   <!--dept_id is fk -->
+                <!-- <input asp-for="Department_Id" class="form-control" /> -->
+                <select asp-for="dept_id" asp-items="deptList" class="form-control">
+                    <option value="0">select department</option>
+                </select>
+            <span asp-validation-for="dept_id" class="text-danger"></span>
+
+            </div>
+    @* <div class="form-group">
+        <label asp-for="SelectedInstructorIds"></label> //make viewmodel have list from instructor called SelectedInstructorIds
+        <select asp-for="SelectedInstructorIds" asp-items="InstructoresList">
+                    <option value="0">select Instructor</option>
+              </select>
+
+            </dev> 
+    <div class="form-group">
+        <label>Instructor</label>
+        <select asp-for="Instructores" asp-items="ViewBag.InstructorList" class="form-control" multiple="multiple" name="SelectedInstructorIds">
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+ *@

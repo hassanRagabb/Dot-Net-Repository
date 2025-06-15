@@ -1,0 +1,405 @@
+instal core and tools only
+--------------------
+swager :package
+fiddlir :old  its app 
+post man : to build and test requst and response 
+--------------------
+route for each controller http/localhosyt/api/employee/
+and also route for each action //http/localhost/api/employee/{id}  //its just for prameters to the controllers depend on requst verb
+------------------
+[HttpGet("{name:alpha}")] //constarint must string 
+[HttpGet("{id:int}")] 
+
+[Route("/api/employee/{id}")]//ovrride  http/localhosyt/api/employee/{id}
+---------
+from contoller bae p2 dqyqa min 12
+httpcontext: have req and response
+routedata have segment mean name controller and actions and ptr :hassanrequst verb
+modelstate  valid or not make ur custom class and just print error from validation not all modelstae
+user : authorize or not
+
+return is ok bad requst not found.... not view or content type :(
+[ApiController]
+[Route("[controller]")] //route for resource
+
+-------------
+[HttpGet("{id}")]	== 	[HttpGet]then[Route("{id}")]
+
+[Route("/api/employee/{id}")]//ovrride  // remove all just let localhost only  and be complete like  http/localhost/api/employee/{id}
+
+[Route("{id}")]//concate "will be/api/employee/{id}  		:to the route in the all class controller "resource class as a whole
+public IActionResult GetEmployeeById(int id) ///model binder for primitive only in route data ( ptr or query string) must be ([fromRoute]int id)
+----			
+[Route("{id}")]//for primitive				
+public IActionResult GetEmployeeById([FromRouteid]int if,[FromBody] Employee emp) 	complex like emp in requst always body only 
+----
+return StatusCode(204); //ur work is done correct but no return result like if u update record in database 
+return StatusCode(StatusCodes.status204nocontent); //same live above;
+----add employee
+return Created(url for resource,obj); //201 ex:return Created("http/localhost:2054/api/employee/"+newEmp.Id,newEmp);   
+	     // static url so webserver error solved by under
+	     //in response header location have url and (obj in response body ) for details to the added object  1:11d1p2 important if u get  the url will 	    //print for u added employee
+string url = Url.Link("addemployeeee", new { id = newEmp.Id }); //after save chagne for id to take it from db
+return Created(url, newEmp);
+----
+
+
+
+return BadRequst("ERROR HAPPENED")//STRING
+return BadRequst(MODELstate)// return ur object again ######################################################### validation here custom object	and map from model state to ur custom class error also min 1:07 p2d1 make ur custom class and just print error from validation not all modelstae
+
+return BadRequst(excptional)//try catch
+---------------------------------------
+405 not allowed : resource exist but u dont make action for this requst verb or not public action 
+404 not found : u dont have this resource  but domain exist 
+unsupported media type hi waiting thing in body requst be u dont send them
+---------------------------------
+
+58:put in postman header
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------						day 2
+1-customize binding
+2- dto (data traverse pbject ) for problem
+3-consumer like html   win form
+4- EnableCors
+-------------------------------------------------------1-	customize binding
+how data from the request is bound to your action parameters  
+Use [FromQuery], [FromBody], [FromRoute] > will not work hi just take for complix from body and primitive from url  but in mvc will work:(
+problem becasue post take just 2 segemnt to access it and wait complex in body of requst so we will solve this problemmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+------
+HttpGet: dont have body so server will not look to body for requst u need thing from server no need to send anything to him 
+so u can send complex in route in get method [FromQuery], [FromRoute] for ur object
+[FromRoute]  /hassan/24/5555   but [FromQuery],  ?name=hassan&age=24...
+
+also delete method
+------
+u cant repaet ur body in ptr u just have one ptr recive from body may u can recive an array
+
+
+------------------------------------------------
+2- dto (data traverse object ) for problem navigation properity cycle 
+
+forignkey its like view model in mvc but u model data for view here u model data for consumer :min 55
+get all emps in department 2 dto min 59
+Dto
+1-u send just what consumer need not full object
+2-u protect database hide full structre for database because u make model for cols not the real name for columns min 50 d2p1 
+
+U WILL BIND just what u need from object so no cycle problem solved by json igonre but notbest best is dto 
+auto mapper tool same attribute in viewmodel or in dto mapp it from ur database
+------------------------------------------------
+3-consumer like html   win form
+
+------------------------------------
+4- EnableCors provider not allow u to access the url u must write the domain confirm the server allow u to access this url 
+this block cors u need to make it open to other outside projects like angular  this error come when 2 diffreent domain speak toghether or 2 protocols diff
+get is opend but post delete update is closed to open them in program add this in pipline in middleware before authorization  by app.UseCors("MyPolicy")//  
+for policy for block and open to who add it before app.build 
+builder.Services.AddCors(corsOptions=>{
+corsOptions.AddPolicy("MyPolicy" //this is name used in usecors, corsPolicyBuilder=>{//to which u will open this and closed to who });
+{
+	corsPolicyBuilder.withOrigins("www.iti.gow") //allow specific domain
+	corsPolicyBuilder.AllowAnyOrigin() //allow for all domain 
+	corsPolicyBuilder.AllowAnyOrigin().WithMethod("Get")//allow for all domain just get method u can add array here for get and post\
+	corsPolicyBuilder.AllowAnyOrigin().AllowAnyMethod().allowanyHEADER();
+}
+
+open to which ip and which domain added to service also in program main firstly  min 16 p2
+
+
+
+IN WINDOWS form OR IN ANY BUT this using c#
+private async void button1_Click(object sender, EventArgs e)
+{
+    try
+    {
+        using HttpClient httpClient = new();
+        List<Emp>? empLists = await httpClient.GetFromJsonAsync<List<Emp>>("http://localhost:7378/api/ListEmployee"); //serialize make class EMP
+
+        label1.Text = empLists != null
+            ? string.Join(Environment.NewLine, empLists.Select(emp => emp.name))
+            : "No employees found.";
+    }
+    catch (HttpRequestException ex)
+    {
+        label1.Text = $"Error fetching data: {ex.Message}";
+    }
+}
+build requst using ajax
+
+<body>
+    <button id="fetchEmployees">Get Employees</button>
+    <label id="employeeList"></label>
+
+    <script>
+        $(document).ready(function() {
+            $("#fetchEmployees").click(function() {
+                $.ajax({
+                    url: "http://localhost:7378/api/ListEmployee",
+                    type: "GET",
+                    dataType: "json",
+                    success: function(response) {
+                        if (response && response.length > 0) {
+                            $("#employeeList").html(response.map(emp => emp.name).join("<br>"));
+                        } else {
+                            $("#employeeList").text("No employees found.");
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        $("#employeeList").text("Error fetching data: " + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+build requst in angular using httpclient 
+----------------------------------------------------------------------------------------
+submit in angular not for action its call function using typescript and u submit manyally and also u cuild requst manually
+----------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------						day 3
+
+
+token 
+jwt famous json web token  seralized as string  
+open auth
+barrier :Microsoft.AspNetCore.Authentication.JwtBearer
+
+
+
+
+min 24 p1
+
+send token in head not body because body just have one thing like login page 39
+
+
+token have digital sign so n one can sign it like ur dad sign ur exam
+signature by HMAC hash masseage authontication code take token data and return key "signature"
+
+
+
+token have 3 parts
+1- header :algorithm used to have signature like HMAC  + TOKEN TYPE jwt
+2- payload : info inside token predefiened audenece id-tokein sub-subjectClaim roles jit claims and built in claims min 48 by jwt iana jwt standards min 37 p1
+3- SIGNATURE : HMAC take tokien (header and payload) + key  as input   "for encryption and make signature" add this to tokien
+
+ (header and payload) + signature and key =>  verify reverse tokien based on determine algorithm in header if signature valid u sign if not u arent signed
+
+
+tools
+sqlserver
+identity
+Microsoft.AspNetCore.Authentication.JwtBearer to be addedd in program.cs
+
+------------------------------------------------------------ 	part2
+login post in body
+create jwt tokien in login and check requst for authorized person on tokiens 
+
+
+
+login 
+1- check username and password if they are correct so create tokien 3 parts
+
+return Unauthorized(); //401 if not valid user not bad request
+
+
+
+if usename and password valid so create tokies by jwt secret tokien
+
+JwtSecurityToken// design represent json web tokien : take 3 parts and put them in tokien header and payload and signature
+
+
+
+
+issuer // url for the person on this claims summary is url for the provider
+audence : url for consumer need this website they need this tokein
+claims : as collection custom claims name role ...
+expires
+signingcredintial how hi sign this tokien  hi take key and sign it take 2 ptr algortihm and key will encrypted
+
+
+
+
+
+/////////////
+create tokien after success login username and password 
+	if (ModelState.IsValid) 
+	{	//ceack found and create tokien
+		//check in datbase if another like emp will use repository for it but here we use user manager
+		ApplicationUser userModel = await userManager.FindByNameAsync(userDto.UserName); //return application user record from db
+		if (userModel != null)  //check passeord also not just username
+		{
+			//check password in database with ur password in form
+			bool isPasswordValid = await userManager.CheckPasswordAsync(userModel, userDto.Password);
+
+
+			if (isPasswordValid == true) //found username and passwrod now
+			{
+				//claims will be inside tokien
+				var claims=new List<Claim>();
+				claims.Add(new Claim(ClaimTypes.Name, userModel.UserName));//for application user
+				claims.Add(new Claim(ClaimTypes.NameIdentifier, userModel.Id)); //for application user
+				claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));//tokien id changeable new tokien with anther login min 15 p2 
+				//add roles in claims get role by user manager 
+				var roles = await userManager.GetRolesAsync(userModel); //list string
+				foreach (var roleItem in roles) {
+					claims.Add(new Claim(ClaimTypes.Role, roleItem));
+				}
+
+				//signingCredentials for verify tokien by key and algorithm
+
+				SecurityKey SigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Config["JwtSettings:secretKey"])); //string as byte
+
+				SigningCredentials signCredintial = new SigningCredentials(SigningKey , SecurityAlgorithms.HmacSha256);//sign dad
+
+				//create tokien secret  represent tokien not create it ##################################################### create under 
+				JwtSecurityToken mytokien = new JwtSecurityToken(
+									issuer: Config["JwtSettings:validIssuer"],  //url web api swager		
+									audience: Config["JwtSettings:validAudience"], //like angular
+									claims: claims,
+									expires: DateTime.Now.AddHours(1),
+								    signingCredentials: new SigningCredentials(SigningKey, SecurityAlgorithms.HmacSha256)
+										);
+
+				return Ok(new
+				{
+					token= new JwtSecurityTokenHandler().WriteToken(mytokien) , //create instance token here//////////////////////////////////////////////////////
+					expireation = mytokien.ValidTo								//serialzie and add to payload oftokien
+				});
+
+
+
+				//old mvc
+				//SET Cookie //create cookie after check data valid in database no in form 
+				//using SignInManager<ApplicationUser> in construcctor
+				//await signInManager.SignInAsync(userModel, userVM.RememberMe);      //default take id name and role  
+				//for add extra info not just default
+				//List<Claim> claimss = new List<Claim>();
+				//claimss.Add(new Claim("Color", "red")); 
+				//await signInManager.SignInWithClaimsAsync(applicatonUser,false, claimss);
+				// false for not presistant we will make it true in login action
+				//return RedirectToAction("Index", "Home");
+			}
+		}
+
+		return Unauthorized(); //401 for no name like this name
+		//ModelState.AddModelError("", "Invalid login attempt.");
+	}
+
+	return Unauthorized(); //401
+}
+
+
+
+---------
+https://jwt.io/   copy in it token
+
+
+
+need to check on returned token
+ 
+ app.UseAuthentication(); default is cookie  add middelware check jwt tokien min 41 p2 [Authorize] use jwt tokien in check authontication
+
+
+//tokien send in header or body or url 
+
+
+
+----------------------
+login will create tokin for u 
+and u can access action using tokin send it in header or in body or route  best in header any req have header
+
+
+
+
+http://localhost:5167/api/Employee and in header key is authorization and value Bearer tokenValue with each requst u must put this in postman
+
+
+
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>//classes this wreach to user manager and role manger
+	( ).AddEntityFrameworkStores<ITIContextDB>()
+	.AddDefaultTokenProviders();//for reset password or forget password 
+
+
+
+
+
+
+
+
+
+
+
+swager in main
+		builder.Services.AddSwaggerGen(options =>
+		{
+			// Register multiple Swagger docs (v1, v2)
+			options.SwaggerDoc("v1", new OpenApiInfo
+			{
+				Version = "v1",
+				Title = "moco - API",
+				Description = "ITI Project"
+			});
+
+			options.SwaggerDoc("v2", new OpenApiInfo
+			{
+				Version = "v2",
+				Title = "moco - API",
+				Description = "ITI Project"
+			});
+
+			//  Add JWT Bearer definition
+			options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+			{
+				Name = "Authorization",
+				Type = SecuritySchemeType.Http,
+				Scheme = "Bearer",
+				BearerFormat = "JWT",
+				In = ParameterLocation.Header,
+				Description = "Enter 'Bearer' followed by a space and your token"
+			});
+
+			//  Apply JWT to all operations
+			options.AddSecurityRequirement(new OpenApiSecurityRequirement
+{
+	{
+		new OpenApiSecurityScheme
+			{
+					Reference = new OpenApiReference
+					{
+						Type = ReferenceType.SecurityScheme,
+						Id = "Bearer"
+					}
+				},
+				Array.Empty<string>()
+				}
+			});
+		});
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+email confirmation 
+phone number confirmation 
+2 factor auth
+reset password
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>//classes this wreach to user manager and role manger
+	( ).AddEntityFrameworkStores<ITIContextDB>()
+	.AddDefaultTokenProviders();//for reset password or forget password 
+
+
+https://github.com/aksoftware98/identitycorecourse
+https://www.youtube.com/watch?v=UJ7kU37IbEA&list=PLFJQnCcZXWjuHP03Kgf46FrX5L2fRzDsx&index=5
+
+
+
+
+		
