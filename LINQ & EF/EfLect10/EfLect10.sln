@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfLect10", "EfLect10\EfLect10.csproj", "{7337106F-F3D6-464C-8058-B460DA8ABA9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfLect11LazyLoading", "EfLect11LazyLoading\EfLect11LazyLoading.csproj", "{59DA733D-59AE-4F63-A3B1-F091EA15861C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lect12Dapper", "lect12Dapper\lect12Dapper.csproj", "{C0BFB148-C19F-4102-8992-E7B710C5DC40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperMemory12", "HelperMemory12\HelperMemory12.csproj", "{22910B37-2D5F-4961-B9A9-4F4FB8360CAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7337106F-F3D6-464C-8058-B460DA8ABA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7337106F-F3D6-464C-8058-B460DA8ABA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7337106F-F3D6-464C-8058-B460DA8ABA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7337106F-F3D6-464C-8058-B460DA8ABA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DA733D-59AE-4F63-A3B1-F091EA15861C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DA733D-59AE-4F63-A3B1-F091EA15861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DA733D-59AE-4F63-A3B1-F091EA15861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DA733D-59AE-4F63-A3B1-F091EA15861C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BFB148-C19F-4102-8992-E7B710C5DC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BFB148-C19F-4102-8992-E7B710C5DC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BFB148-C19F-4102-8992-E7B710C5DC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BFB148-C19F-4102-8992-E7B710C5DC40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22910B37-2D5F-4961-B9A9-4F4FB8360CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22910B37-2D5F-4961-B9A9-4F4FB8360CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22910B37-2D5F-4961-B9A9-4F4FB8360CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22910B37-2D5F-4961-B9A9-4F4FB8360CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {857BBBAE-CADB-49A7-81FF-87E93D4191F1}
+	EndGlobalSection
+EndGlobal

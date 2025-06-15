@@ -1,0 +1,903 @@
+
+----------
+.net framewrk dont have laatest relase now for EF so u need to install it with nuget coz latest version of .net framework  dont need to use nuget becasue in it have the latest realese for EF before he die
+----------
+
+
+in ado u write code and also u write database and u establish connection but there is tools like Ef for mapping relation to code 	
+-------
+sql databse  data aceess tech with .met core
+for run queires and run stored procedeures and also take data from ui to database and retrive also as data binding 
+
+
+firstly ado then entity framework
+
+
+resusability with layer application like oop if u write windows u can ruese it with wpf also mvc ..
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+connect in database any type oracle mysql dbt2 nonsql(mongo..)
+
+sqlconnection with credintial like which database which server and username pass 
+
+ado.net //active data object some classes for establis connection and run commands quires  and save some data and data table
+----
+ado work as provider based  like 
+	1- native provider :sql server v7 or higher : have sql provider and oracle ..
+	2- odbc provider like old access standared interfaces
+	3- oledb provider //standared interfaces
+---	
+retrived data can put in anonymous type or tuble or data table //data table work with all provider 
+
+organize code with business obj and business entities like table represent emp make class called emp also for product make  class product 
+note rules :class name always singlural put table always plural (gm3) table products class product 
+
+---
+in ui u deal with business object and retirved from tables is data table so u need to cast it and parse it to business object
+---
+in ado u write code and also u write database and u establish connection but there is tools like Ef for mapping relation to code 
+----
+.net core is component based each team work sepratly so if u need to install something u will not like .net framework installed before all teams work toghether
+----
+
+data binding :u retrived from tables into list full contrill with the data the result is same but u write less code there is also simple binding and complext binding 
+----
+
+ado have 2 modes or 2 scenario:
+establish sql connection
+sql command types:
+1-connected mode //data is aviable as long as the conection opened no fly copy this is the latest data but u have overhead 3la server and in ado its read only just select
+u use classes from object is SqlDataEeader like masking for rabber data allow u deal with data  after read it u can may take a copy 
+2- disconnected mode //read and write in ado // SqlDataAdapter 4 commands select insert delete update offline retrived copy of data stored in obj(1-data table as one table even u do join ) after retrived close the connection  // but if u have multiple tables and between them navigation like forign key u have class called data set is offline database schema and have realtion between them but if u have many tables and no realtion between them the fastes is data table /////////////////////////////////////////////////////////////////////
+note in disconnected u open and close it in each time u need to do thing
+read only // sql data reader advantage is u work with the online version now not copy from data
+read & write // data tables but no realtion no forign keys if there is realtion u must use data set class  and the waseet is the adaptor but the dissadvantage u work with copy not the online version to be sure that u have new version u must refresh and get latest version ef work like disconnected look to local cash from data as drefred hi look to stock and found 3 products and order one and need to order new one may finsihed not found so need to refresh but in other app like grade student u need to update all offline then send final for all student once 
+
+
+connected mode u open and close like scalar 
+disconnected like adaptor mode u get all the data in table then u make changes and at end upload it
+-----------------------------------------------------------------------
+sql client //using System.Data.SqlClient; u must install it
+
+
+steps to add connection  at min 1:10 vid 1
+1- install System.Data.SqlClient //add dll with ur project but in .net framework u install it on level of machine once no need to add it again in each project but still old version same in all projects
+
+
+
+sp_who // queiry in sql know how many connectio now
+
+
+
+
+min 1:20 vid 1 subscribe to error of cascade in database remove pk that is fk in another table with infoMessage 
+
+
+-----------------------------------------------------------------------
+if u use sql auth u must encript ur username and password because spy can convert dll to c# and can know ur c# code
+
+in the development u code in ur localhost but in exe u must deploy in server so u will write the ip of the server if this server lost u must recomplie the code again so : if u change in c# after deploy u must complie again the disadvantage if u have app for attendence in 5 places giza cairo alx this like u have 3 version depend in just branch Id of ur source code if u need to change or update u must compile  all these versions again this is not good we dont need to compile again so u can put ur connection in any application confiugration file  on level of ur app by add new item min 1:27 vid 1
+this is not good we dont need to compile again so u can put ur connection 
+u cant put ur connection in database because u use connection string to connect to database 
+
+application confiugration file 
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="BranchId" value="3" />  <!-- For ALX, use value="2"; for another source like cairo, use value="1" -->
+	</appSettings>
+	<connectionStrings>
+		<add name="NorthwindCN"
+			 connectionString="Data Source=.;Initial Catalog=Northwind;Integrated Security=True;" // username and pass u can encrypt them here or take then durring run  time then concatinate them 
+			 providerName="System.Data.SqlClient" />
+	</connectionStrings>
+</configuration>
+
+public DataBaseManager()
+        {
+            sqlCN = new SqlConnection();
+            // Reads the connection string named "NorthWindCN" from App.config
+            sqlCN.ConnectionString = ConfigurationManager.ConnectionStrings["NorthWindCN"].ConnectionString;
+            
+        }
+
+
+    
+u can update dll for config like branch id and rhe exe will changed after this automatically without need to compile again 
+
+
+
+note : connection not managed by grapage vid 1 min 1:34 :not managed means not in ur heap  but object in heap  the obj removeed when app closed but this obj booked resources on level of sql server these resources will be realse when u say close or when u make disposing for ur obj for clean up the resources not managed by garpage collector so in load form u can write like :
+ this.FormClosed+= (sender, e) =>sqlcn?.Dispose(); //=>sqlcn?.Dispose clean and empty the resources on level of database //without dispose after some of time the sql ide will close connection auto 
+-----------------------------------------------------------------------
+
+old without app.config
+private void Form1_Load(object sender, EventArgs e)
+        {
+            sqlcn = new SqlConnection();//Data source is server name and dot stands for local //true for windows authintication if false u use sql authintication
+
+            sqlcn.ConnectionString = "Data Source=.;Initial Catalog=Northwind;Integrated Security=True;";
+
+            sqlcn.StateChange += (sender, e) =>this.text= $"state was {e.OriginalState} and changed to {e.CurrentState}";//print like as name of form
+            sqlcn.InfoMessage += (sender, e) => MessageBox.Show(e.Message);
+        }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------											lect2
+
+object for connection u put them in just one class and shared among all forms and dromthis class create objects in constructor of each form using System.Data.SqlClient;
+
+sql command needs the connection and command 
+
+
+
+ExcuteNonQuery // (insert update delete) retrive just one value int that is number of rows affcted  BUT U DONT HAVE DATA //ExcuteNonQuery async is the new of it
+ExcuteReader //retrive collection data rows and columns 
+ExcuteScalar// retrive single value like avg count min max sum
+ExcuteXmlReader//retrive data as xml 
+before the 4 commands u must open connection and closed at end  
+
+ExcuteReader //retrive collection data rows and columns  have disadvantage but if u need to have data all kolha at one time use adaptor and u can use it offline  
+note:adaptor manage clos and open connection u dont need 
+-----------------------------------------------------------------------
+if u closed closed connection no problem
+
+follow what happened in ur database by app sql server profiler
+-----------------------------------------------------------------------bind
+ data binding cant fit in reader
+
+SqlDataReader reader = getProdId.ExecuteReader(); 
+adapter.Fill(dt); //error coz  data binding cant fit in reader this in forms but in web u can make data binding  
+
+
+u can bind in just list and grid using data source propirites this is called complex data binding control connect on source of data 
+complex ex:
+Adaptor = new SqlDataAdapter(sqlCmd);
+            Adaptor.Fill(table);
+
+
+detaildView for simple data binding
+//simple data binding :single proprity at time from source //like text of contril just read mn database or color just read or background 
+            lblProductID.DataBindings.Add("Text", table, "ProductID");
+            txtProductName.DataBindings.Add("Text", table, "ProductName");
+            numUnitsInStock.DataBindings.Add("Value", table, "UnitsInStock");
+
+
+
+binding source // to move through data source like u now see first rec need click to see another rec
+
+-----------------------------------------------------------------------
+int productCount = 0;
+
+// Execute the SQL command and attempt to parse the result
+if (int.TryParse(SqlCmd.ExecuteScalar()?.ToString() ?? "0", out productCount))
+{
+    this.Text = $"Product Count = {productCount}";
+}
+
+
+
+
+--------------------------------------------------------------
+to run stored procuder at min 25 to 40 vid 2 https://www.youtube.com/watch?v=y_SQLhW9YkM&list=PLesfn4TAj57WisNpNGLPCS1donYYAEQSI&index=2 send prameters to it
+--------------------------------------------------------------
+sql injection means u concatenate in security u work with sql prameters : like stored proc remove sql injection
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+retrive table and put it in form at min 41 vid 2 using sql data adaptor (with 4 commands)
+
+retrive list from product and also have ids as hidden value 
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+in dislconnected u open and close the connection every time 
+---------------------------------------------------------------------------------------------------------------------------------------------
+min 53 u choose product name but u have hidden value id;
+---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------											lect3
+
+if u have multi value deal it as 2 tables dont use data set var coz its heavy on data make 2 tables and the first have value id will look at the second table as fk min 18
+ trace and depug for unit test data row state enum  ex
+to which row inserted or updaated or delteed or not modified by data table
+foreach(DataRow dr in table.Rows) //table that u retrived by adaptor from fill
+            {
+                Debug.WriteLine(dr.RowState);  
+            }
+
+---------------	layered app so u can make many ui and some layers resueably in each ui min 57 to reduce effect of change in layers
+out of each layer is dll also files each layer as project and connect them with refrence at min 1:17 vid 3 second 50
+
+from booton so 1 is the bottom and 2 is above bottom 
+1- database
+2- data access layer (recive commands and names of stored procudres and excute and retrive data ) have ado   dll retrive data to business logic in sys.object or data table ,int
+3-business logic layer functions() // hi just send to data access layer the procuder name and prameter maybe :no ado for sql client just if u connect in sql server and replaced it to oracle u will not change in business layer u will just change in data access layer so now its distrubuited application layer so now we reduce effect of change 
+inside business layer we have 3 things (entities is class represent table ,entities list,entity manager) so we work by table per class so  clas for product and another class represent product_List and the entity manager class is functions for insert product update product delete product select product u can put them in product class or make manager class seprate for entity is best so make seprate like EF 
+--are i can make just one table for herachy of classes like parent and 2 child in just one table so performance in runtime be good or tabel for each class so normalization will be good andperformance will be lost
+
+4- user interface layer :ui  so here ui is just valid data from user and call some function (send business function to  business logic layer like productManager.selectAll to the business layer inside the button click ) ) note: dont know what the type of database hi just gui : is just business object  retived from business logic layer ( business logic  just call function like select * product ) bind and show in 
+if u need to make new ui by mobile u will just add the dll for layers and call same functions and bind them and fillter 
+
+
+
+if u just need to store data u need to start code first but if u need to do more in data start by database first like u have 3 adminstartion for database do normalization from 10 years old so here u start with database first and map it to code
+
+
+-----
+note in 3-business logic layer functions() u have 3 folders but u must make a base and the product inhrit from this base so in future if u need to update or maintain it u can inly edit in the base at min 1:17 vid 3
+each layer as project and connect them with refrence at min 1:17 vid 3 second 50
+----
+
+
+
+
+
+in ui u cant deal with adaptor but in business logic u have class called product AND another class ProductList and ProductManager class all is public classes
+in the product u have the mapping of table of the stuctre of product table  
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------											lect 4
+ado tiers used stored procudres for crud operations
+because u use layers seprate we will use disconnected mode by adaptor not reader to read the connection install the configuration and sql client 
+
+exception vid 4 min 45 to min 48 for if try u handel it with catch also show u the error or exception by enable feature 
+and to solve error for connection 
+app.config must be in ui not in access layer because hi run exe hi wait dll with his name 
+because at runtime, the config is read from the executable’s config file
+---------------	
+
+
+
+
+
+you stoped at min 51; have error 
+
+
+
+
+
+
+install profiler in database 
+
+
+
+datatable auto mange each record by enum if its updated if its deleted .. but in object not u must write it in class enum inside the entity with project clss also new file but in EF do it automatically min 1:19
+OBJECTS HAVE THESE VLUE FROM the base class that product inherit from it
+
+
+
+gird have binding source but in detaild u must add binding source there is event in it callled addingNEW THAT ADD NEW RECORD IN DATA LIKE ADD NEW PRODUCT  MIN 1:29 TO 1:33 VID 4 
+
+
+
+
+
+ADAPTOR LIKE MIDDEL between u and databse u told him to fill update save ...
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 								lecture 5
+
+
+
+
+entity framework 1 then 2 then 4 then 4.1 ,4.2 4.3 5.x then 6.x old one
+EF Core 5.o (code first only 2 ways from database to classes and also from classes to database)
+1- EF runtime translate dll by linq to sql ..retrived data to objects
+2- design tools (vs)
+
+
+steps
+1- after mapping u start to write quires like LInq to EF like CRUD there is enother langauage like linq called entity sql but used less
+
+STORAGE MODEL IS DATABASE
+Conceptual model is classes  
+
+
+1- table per class but not good in herirachy like parent and childs this class have just attr to do functions make another class like manager 
+have problems in insert delete update ..need to innert in 2 tables parent and child double effort 
+
+2- table per hireachy :EF work by confention  table per hireachy single table for child and parent have all attributes and have * col the diffrent between them is it carBM OR BORSHE discriminator or retrived object if it engine >500 this is bm .. but record have nulls but the crud work in just one table 
+---------------	
+
+EF work by confention  table per hireachy 
+
+---------------	---------------	---------------	---------------	---------------	---------------	
+realtion in database how i map them in classes
+employee and department
+
+in databse its just uni direction the employee just now the dept but dept dont now u must make join but in class no its bidrection each know about each other
+CREATE TABLE Department (
+    id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+-- Employee table
+CREATE TABLE Employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES Department(id)
+);
+
+
+public class Department
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+
+    // Navigation property: One department has many employees fk translated to Navigation property
+    public ICollection<Employee> Employees { get; set; }// ICollection like hashset // relation association its just refrence not memory
+}
+
+
+public class Employee
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+
+    // Foreign key to Department
+    public int DepartmentId { get; set; }
+
+    // Navigation property: Each employee belongs to one department fk translated to Navigation property 
+    public Department Department { get; set; } // relation association its just refrence not memory 
+}
+
+
+
+know u can now without make like joining u will write just 
+employ.dept.deptName //linq to entity translate it during runtime to sql
+
+but still have problems u retrive big data from memory if u need dept u will also get the emps but its work as lazy loading properity for ay properity virtual by deafult but u can make it eager loading 
+
+
+
+
+virtual Navigation property// as lazy loading properity hi will just retrive the required  data vid 5 min 41 to 43
+
+
+ORM not use stored procuders by default she use Linq to entity and return object if u need stored proc for time performance 
+
+
+
+
+
+
+EF aspmvc not foound by default inside .net core framework u must install it min 55 vid 5
+choose app
+Install-Package Microsoft.EntityFrameworkCore.SqlServer //dot net 5 as target  //.SqlServer provider u can work with other like odbc mongo ... so this is the dll so u can convert and deal with databases
+
+
+
+
+each entity have id write DepartmentID or ID NOT Department_ID
+
+
+
+
+DbContext : way to communicate to database here like adptor there is middel between u and database called context class file there is tools automatic build it like EF core power tools min 1:7 to 1:9 vid 5 
+
+
+
+dispose is replace for destructor for unmanged garpage collector like connection of database 
+(EnterpriseDbContext context = new EnterpriseDbContext()
+try{}
+finally{context.despose();}
+
+
+
+if u dont need to follow conventions maping like u need id to be string (3 ways 1- data anotation 2- fluent api 3- configuration class)
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 								lecture 6
+
+
+
+--delagetes u changes during runtime there is design pattern control for creation like singelton also factory(seprate between define obj and using of it) woth dependency injection for object inside another object 
+
+dbset call tables
+
+
+----------------migration
+if u make changes in structre and need to reconstruct it but if u delete it and recreate it again u will be fired so migration come to solve this
+lets update data structre with the old structre like combine min 11 vid 6
+
+
+
+if u dont need to follow conventions maping like u need id to be string (3 ways  1- data anotation in entity class source c#  2- fluent api using override OnModelCreating function in context class also if u dont have class for product like old project using dll 3- configuration class seprate class file per each entity)  min 16 vid 6 
+
+----migration here min 48 to 51 vid 6
+u update classes and need to add these updates without drop and recreate database
+
+steps min 36 
+before code and database 
+ Install-Package Microsoft.EntityFrameworkCore.sqlserver
+ Install-Package Microsoft.EntityFrameworkCore.Design
+ Install-Package Microsoft.EntityFrameworkCore.Tools
+
+1- Install-Package Microsoft.EntityFrameworkCore.Tools
+2- enable migration by Add-Migration InitialCreate //InitialCreate u can chnage its just name
+	PM> Add-Migration InitialCreate
+		Build started...
+		Build succeeded.
+		To undo this action, use Remove-Migration.
+
+  note: this create folder called migration have one file called EnterpriseDbContextModelSnapshot for the new attributes or new cols.. these new changes will added to migration class (up and down functions)file  
+3-Update-DataBase :in cli or
+till him in main function the database to be in same construction(updating) by
+context.Database.Migrate(); // replaced context.Database.EnsureDeleted() context.Database.EnsureCreated(); 	
+
+or  write in cli write : Update-DataBase
+
+
+ 
+4- run code
+
+
+problem during migration
+Your project targeted .NET 5.0, which uses C# 9.0.
+
+But the tools you used (EF Core and dotnet CLI) expect C# 10 or higher, which requires .NET 6.0 or higher.
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+generate your entity classes and DbContext automatically from an existing database called Database-First approach or Reverse Engineering  using EF Core scaffolding: min 56
+download Ef Core Power Tools in viual studio add on  is gui or
+
+
+
+
+
+the ef code cant update because each time may hi create it again if u need to add functions u can create class like product.Developer.cs will be a partial class min 1:27 vid 6 ovride tostring maybe.. cant deleted when u regenerate 
+
+
+
+
+
+
+
+
+
+
+u have databae install ef 
+and do reverse engineering
+
+
+u have class as conceptial model or domain model u have context class make migration to build database :(
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 							lecture 7
+
+
+
+-complix type like owned entities or keyless: class fill from database by stored proc have no pk is keyless or class map to view not table
+- eny properity not map to scalerValue is maped to nav propeirity to an entity 2 types 
+ex emp have dept and dept have emp
+1- prencipal entity like department have pk for dept  employer
+2-dependent entity like employerhave fk from dept
+
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+vid 7 from 13 to 21 gamed to setup project
+before code and database
+ Install-Package Microsoft.EntityFrameworkCore.sqlserver
+ Install-Package Microsoft.EntityFrameworkCore.Design
+ Install-Package Microsoft.EntityFrameworkCore.Tools
+
+
+logger enterprise library extension for dot net framework and inside it the logger for microsoft or simple logging in core 5
+
+use entity tracker to know if it recored changed used in EF enum this entity must have pk for tracker note ( to get data read only dont make pk in class ) 
+
+
+if u add new attributes old will be null like age so public int? age{set and get};
+
+
+min47 good for send attribues for validation class  
+
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 							lecture 8
+
+
+validation 
+
+SaveChanges(); not check validation for annotation and also fluent api after ef6.4  voz ui validate in ui less to validate in entity  but if u consume daata from socket or stream so u must in this cases to handel validation in access layer before go to sql server so u must ovvride SaveChanges() in Dbcontet to enforce validation 1:14 
+also if u regenrate context u must make ur own context as like extension inherit it and ovrride this function this validate att one by one
+
+note savechanges work as transaction if one change error will roll back all 
+
+
+-----------chat gpt
+
+Employees Departments TrainingCourses 
+recommed me another table to use in fluent api is public class Attendance
+{
+    public int EmployeeId { get; set; }
+    public int CourseId { get; set; }
+-----------
+
+U HAVE MANY ENTITIES TO MAP THEM USING FLUENT API DONT MAKE THEM IN CONTEXT take many place in this class put it to configuration 
+ex
+ class  like DepartmentConfiguration class inherit :IentityTypeConfiguration<Department>
+min 26
+
+
+
+fluent is high priority 
+
+ICollection or ilist  or ienurmable but the correct is ICollection 
+
+
+
+
+----------// Foreign key min 45 to 1:1
+1 to many 
+modelBuilder.Entity<Employees>()
+HasOne(E=>E.Department)
+withmany(D=>D.Employees)
+Isrequired()
+OnDelete(DeleteBehavior.Cascade) MIN 58
+
+
+
+if u define 3 hi will define it as cascade but if u just deinfe 
+1 public virtual Department Department { get; set; }//virtual for lazt load  2- public int DepartmentID { get; set; } fk 3- public virtual ICollection<Employee> Employees { get; set; } 
+but if u just put the 2 u must write cascade on delete in configuration
+1 public virtual Department Department { get; set; }//virtual for lazt load  2- public virtual ICollection<Employee> Employees { get; set; } 
+
+modelBuilder.Entity<Employees>()
+HasOne(E=>E.Department)
+withmany(D=>D.Employees)
+Isrequired()
+OnDelete(DeleteBehavior.Cascade) MIN 58
+
+
+to reach to table dont have dbset
+ in main 
+context.Set<Subject>().Add(new ());
+in context file
+modelBuilder.Entity<Subject>()
+            .ToTable("Subject"); 
+
+
+
+with fluent api u can add new attribute like supplierid for table product but u have old products make default for them 1 maybe 
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 							lecture 9
+
+with fluent api u can add new attribute like supplierid for table product but u have old products make default for them 1 maybe 
+
+
+many to many realtionship 
+
+in core 3 u must write the 3 tables . but in core 5 just write 2 tables but if u need to add measures must create 3 tables  if you need additional properties on the relationship (e.g., grade, enrolled date)
+
+
+
+
+
+crud using linq but i need to make it using stored proc need to run any like view or any run any sql statement
+view is entity with no key 
+
+return from stroed proc TYPES 	1- return data 2- new data type like DTO "data transfer obj"  u dont have it  3- value int number of rows effected  min 38 
+
+
+
+
+
+
+for count like max sum min return just number or num of rows effected on the level of database like
+int count = context.Database
+    .ExecuteSqlInterpolated($"SELECT dbo.GetStudentCount()");
+
+
+
+---------------	 ---------------	 scafold dbcontext  min 45
+ scafold dbcontext   a DbContext and entity classes from an existing database using Entity Framework Core
+Scaffold-DbContext "data source =.;Initial Catalog =nameofurDb;Integrated Security =True;" Microsoft.EntityFrameworkCore.SqlServer -table products,categories,suppliers -OutputDir Models -Context SchoolContext -DataAnnotations min 45
+
+
+key less entity dto mint 59 returned value not tracked so if u update manully cant hear in datbase not tracked no save changes 1:18
+
+
+--------------- view 1:19 to 1:23 view is keyless and also have dbset but still keyless readonly cant change in database but u can use it as table as style of code min 132
+ 
+there is ef power toll like scafolding 
+
+
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 							lecture 10
+
+
+---------------	 ------------
+
+ Install-Package Microsoft.EntityFrameworkCore.sqlserver    version 
+ Install-Package Microsoft.EntityFrameworkCore.Design		version
+ Install-Package Microsoft.EntityFrameworkCore.Tools
+
+
+
+
+
+
+inheritance
+parent is abstract  //put just dbset for all childern no dbset for parent 
+
+table by hireachy for all 3  classes just one table its best but its need configuration classes min 3 also at min 13    add column by defult called Discriminator type of it is one child as text
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Teacher>().HasBaseType<Person>();
+            modelBuilder.Entity<Student>().HasBaseType<Person>();
+            base.OnModelCreating(modelBuilder);
+        }
+
+in case u need to make 3 dbset also one for parent dont make parent abstract 
+---------------	 ---------------------------	 ---------------------------	 ---------------------------	 ------------
+---------------	 ------------to get Discriminator in ur casses use shadow properity  its just in database and not in our classes  
+---------------	 ---------------------------	 ---------------------------	 ---------------------------	 ------------
+
+hi insert by default table per concrete class each child has his own table also need configuration to collect them ass with discremantator make configuration min 13
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Teacher>().ToTable("Teacher");
+	    modelBuilder.Entity<Student>().ToTable("Student");
+            base.OnModelCreating(modelBuilder);
+        }
+
+
+to add discremanator in the parent class in child will inser this as true of false min 25 
+u can discremnator by properity in parent or enum have indexes like 0,1,2,3,4...
+
+
+
+to deal with just single dbset for all 3 atbles min 36 at end  per hirachy  
+
+
+
+
+
+
+
+scafold dbcontext   a DbContext and entity classes from an existing database using Entity Framework Core
+Scaffold-DbContext "data source =.;Initial Catalog =nameofurDb;Integrated Security =True;" Microsoft.EntityFrameworkCore.SqlServer -table products,categories,suppliers -OutputDir Models -Context SchoolContext -DataAnnotations min 45 lect 9 to choose view nontracked create keyless
+
+there is EF power tools like scafolding  here u can choose view , table  its better than scafold in view no need to create keyless class with aythinc version good at multithreading
+
+EF power tools min 55 lect 10 call stored proc with functions these functions implemented auto generated u just send parameters run here stored procuderes
+
+
+
+partial class same name.developer.cs complete to the original auto generted min 1h:7 to min 1:9:
+
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	-------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	 											lect11
+---------------	 min 11 to 15 global variable //added to end of quiey as filters may like where productName="smsm"
+
+
+---------------	 data seeding  need to create table always has data like department or admin table
+
+when u create classes add old data with it during first migration min 18 
+ modelBuilder.Entity<Student>().HasData(
+            new Student { Id = 1, FullName = "Alaa Sabry" },
+            new Student { Id = 2, FullName = "Mona Khaled" }
+        );
+
+modelBuilder.Entity<Teacher>().HasData(
+    new Teacher { Id = 1, FullName = "Dr. Mona", HireDate = new DateTime(2005, 1, 24) }
+);
+modelBuilder.Entity<Student>().HasData(
+    new Student { Id = 2, FullName = "Alaa Sabry", EnrolmentDate = new DateTime(2010, 1, 24) }
+);
+
+
+
+
+-------------------------------
+
+//lazy loading
+to get fk data without including or old install proxy
+if(item.Category == null) //without proxy  Category is not have name 
+            {
+                
+                context.Entry(item).Reference(p => p.Category).Load();//one category
+                //context.Entry(item).Collection(p => p.Category).Load();//MANY CATEGORIES
+                Console.WriteLine($"Product: {item.ProductName}, Category: {item.Category.CategoryName}");
+            }
+
+
+with proxy
+hi will see the fk and go to database and get it to local and new fk if hi get it before  in local okay assign it without going to datasbe and new key check local of not get it before will go to database and get it will visit database uniqe categories put row by row  min 42   so lozay not good with proxy  note include is best case when u know already what u want 
+
+------------------------------------------
+in loacl
+context.product.Local.Count
+in database
+context.product.Count
+
+at each time go to database need to optimize code check local first 
+
+-----------find the id (local then database) return object 
+functio find search in local and then in database if find in loacl not going to database if not found return null no  exception will be thrown
+
+
+
+
+select p from prodcut.asnotracking  //for read only no cahnges in database 
+
+---------------	 ---------------	 ---------------	 ---------------	 ---------------	 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	                      lect12
+
+eager loading means u go and load full database or full table 
+-------------owned entities :not mapped to table 
+owned entities like address min 10 that ownsOne just one address ownsmany have many adddress like store its reapeted in objects like composition
+owned entities its good when u have many classes have address like manager emp hired tempemploy.. all have address u can make it owned and take object ineach class as comosition  
+modelBuilder.Entity<Store>()
+.OwnsOne(adde=addr.Address)//address is class owned by fluent api all attribute in address be in table Stoe
+//ToTable("FullAddress") if u put this it will make adrees as class called FullAddress and take fk to store
+
+
+note : keyless entity is read only like view so not good as table not tracked its just return 
+
+------------- shadow properity 
+have field in database not in class like protect some data 
+to read it or make deafult value in it by name 
+-----------backing field 
+map 3la attributes not properity _name or M_name Avoid exposing sensitive data via public setters.
+modelBuilder.Entity<Product>()
+    .Property<string>("m_name")
+    .HasColumnName("Name");
+
+
+--------- ignore properity in class to be not mapped in database
+[NotMapped]
+---------- constructoe prameter
+u can validate data before put it att or properites
+----------------------------- dapper
+run code with database  no deal with rows and cols just deal with business object like product or category not rows and cols  most using in readonly cant update beacuse hi dont now states of obj no track u must make it manulaly for state
+
+
+its microframework 
+1-install dapper
+
+can run any sql on sqlconnection or dbconnection using dapper
+will added extensiion methods all return business obj min 30
+u can use dapper for readonly put when writting need to pay money
+u can use it with EF hi select and ef write :( like crud
+
+
+
+1- dapper not genertae entity for classes 
+var connection = new SqlConnection(connectionString)
+var products = connection.Query<Product>(
+        "SELECT * FROM Products WHERE UnitsInStock > @stock",
+        new { stock = 0 } //anonyms type its not sql param like EF
+    ).ToList();
+
+
+
+
+by deafult no tracking in dapper result cant update the database its all in memory ienrumable not qurable  
+select p from prodcut.asnotracking 
+
+
+
+
+return 
+
+
+
+Imanager its an interface  for any  entites in dapper u will use it that handles all database operations
+Interface ProductManager inside it implementation  GetAll() .. GetById(int id)..Add(Product product)... Update(Product product) ..Delete(int id) to deal with it as any entity u can make it generic
+Use the ProductManager in Your App  
+OR
+1-
+Interface IManager<T>{ }
+public interface IManager<T>
+{
+    List<T> GetAll();  //SELECT
+    T GetById(int id); //SELECT
+    bool Add(T entity);
+    int Update(T entity);
+    bool Delete(int id);
+}
+
+If needed, you can extend the interface with more specific methods (e.g., FindByName, GetByCategoryId) using either
+
+2-
+ Implement the Interface in Your Manager Class
+public class ProductManager : IManager<Product>
+{
+    private readonly string _connectionString;
+
+    public ProductManager(string connectionString)
+    {
+        _connectionString = connectionString;
+    }
+
+    private IDbConnection Connection => new SqlConnection(_connectionString);
+
+    public List<Product> GetAll()
+    {
+        using (var db = Connection) // u can make it using stored procudrers
+        {
+            string query = "SELECT * FROM Products";
+            return db.Query<Product>(query).ToList();
+        }
+    }
+
+    public Product GetById(int id)
+    {
+        using (var db = Connection)
+        {
+            string query = "SELECT * FROM Products WHERE ProductID = @Id";
+            return db.QueryFirstOrDefault<Product>(query, new { Id = id });
+        }
+    }
+
+    public int Add(Product product)
+    {
+        using (var db = Connection)
+        {
+            string sql = @"INSERT INTO Products (ProductName, CategoryID, UnitsInStock)
+                           VALUES (@ProductName, @CategoryID, @UnitsInStock)";
+            return db.Execute(sql, product);
+        }
+    }
+
+    public int Update(Product product)
+    {
+        using (var db = Connection)
+        {
+            string sql = @"UPDATE Products SET ProductName = @ProductName,
+                           CategoryID = @CategoryID, UnitsInStock = @UnitsInStock
+                           WHERE ProductID = @ProductID";s
+            return db.Execute(sql, product);
+        }
+    }
+
+    public int Delete(int id)
+    {
+        using (var db = Connection)
+        {
+            string sql = "DELETE FROM Products WHERE ProductID = @Id";
+            return db.Execute(sql, new { Id = id });
+        }
+    }
+}
+
+
+daper query is more fast than EF core  in queries but to use them toghether look 1h:00 all function in manager will work without update need changes using anonymous  because hi will have fk so u must send just cols not all obj  using anonymous
+
+
+----------------------
+
+helper class  manual usage in memory for run function usage memory and aslo time  there is library called bench mark .net from nuget but all use build for realase so no optmization
+
+bench mark
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+events in EF on level of objects when state change when obj create ..like trigger but events 
+LOGGING IN EF
+
+
+
+
