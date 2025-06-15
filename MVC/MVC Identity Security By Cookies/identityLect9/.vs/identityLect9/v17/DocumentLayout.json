@@ -1,0 +1,390 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\viewmodel\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\viewmodel\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\repositories\\emoloyeerepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\repositories\\emoloyeerepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\services\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\services\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\contextdb\\iticontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\contextdb\\iticontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\authintcation\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\authintcation\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\migrations\\20250527192839_addauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\migrations\\20250527192839_addauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527170408_AddAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\role\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\role\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|d:\\null\\dotnet\\4- c# mvc core\\lect 9 security\\identitylect9\\identitylect9\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC8B06BD-EE52-4C56-A0DB-4865F4310545}|identityLect9\\identityLect9.csproj|solutionrelative:identitylect9\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 387,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Models\\Employee.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Models\\Employee.cs",
+              "RelativeToolTip": "identityLect9\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:34:51.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmoloyeeRepositories.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Repositories\\EmoloyeeRepositories.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Repositories\\EmoloyeeRepositories.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Repositories\\EmoloyeeRepositories.cs",
+              "RelativeToolTip": "identityLect9\\Repositories\\EmoloyeeRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:34:49.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeManager.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Services\\EmployeeManager.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Services\\EmployeeManager.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Services\\EmployeeManager.cs",
+              "RelativeToolTip": "identityLect9\\Services\\EmployeeManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:34:47.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "identityLect9\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwHAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T20:59:11.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "identityLect9\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:48:07.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "identityLect9\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:48:06.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "identityLect9\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T20:45:06.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\RoleViewModel.cs",
+              "RelativeDocumentMoniker": "identityLect9\\ViewModel\\RoleViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\RoleViewModel.cs",
+              "RelativeToolTip": "identityLect9\\ViewModel\\RoleViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:00:09.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "identityLect9\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T13:34:24.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "identityLect9\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "identityLect9\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:57:07.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "identityLect9\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "identityLect9\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:00:37.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Program.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "RelativeToolTip": "identityLect9\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T22:16:43.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITIContextDB.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ContextDB\\ITIContextDB.cs",
+              "RelativeDocumentMoniker": "identityLect9\\ContextDB\\ITIContextDB.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\ContextDB\\ITIContextDB.cs",
+              "RelativeToolTip": "identityLect9\\ContextDB\\ITIContextDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:35:45.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Authintcation\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Authintcation\\ApplicationUser.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Authintcation\\ApplicationUser.cs",
+              "RelativeToolTip": "identityLect9\\Authintcation\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:22:35.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250527192839_addAuth.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527192839_addAuth.cs",
+              "RelativeDocumentMoniker": "identityLect9\\Migrations\\20250527192839_addAuth.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527192839_addAuth.cs",
+              "RelativeToolTip": "identityLect9\\Migrations\\20250527192839_addAuth.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:28:39.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "identityLect9\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-27T16:39:18.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250527170408_AddAuth.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527170408_AddAuth.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527170408_AddAuth.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527170408_AddAuth.cs",
+              "RelativeToolTip": "..\\..\\..\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Migrations\\20250527170408_AddAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:04:08.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "addAdmin.cshtml",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Role\\addAdmin.cshtml",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\Role\\addAdmin.cshtml",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Role\\addAdmin.cshtml",
+              "RelativeToolTip": "identityLect9\\Views\\Role\\addAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T21:59:58.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "identityLect9\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T20:54:59.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\appsettings.json",
+              "RelativeDocumentMoniker": "identityLect9\\appsettings.json",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\appsettings.json",
+              "RelativeToolTip": "identityLect9\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T20:52:12.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\Role\\Index.cshtml",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\Role\\Index.cshtml",
+              "RelativeToolTip": "identityLect9\\Views\\Role\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T20:45:22.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "identityLect9\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\NULL\\dotnet\\4- C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "identityLect9\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T20:54:50.861Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

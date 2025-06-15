@@ -1,0 +1,151 @@
+It's a complete membership system to handle:
+User registration & login
+Password hashing
+Roles & Claims
+Email confirmation
+Two-factor auth : send code in ur email or click in link hi will complete registeration
+
+1- install Microsoft.EntityFrameworkCore.SqlServer and Microsoft.EntityFrameworkCore.Tools
+2- install Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+
+2-security (identity support for ..login register confirmatiion make login in core its code first old is database first just write commands
+exist filter after press url for an action  u know u by cookie till be expired because mvc is stateless 
+
+user and role : many to many may one user have many roles so we make the third table called userrole have userid and roleid
+identityuser(useridIsString,username,password,email,telephone,...) for all userres main feature
+identityrole(idISstring,rolename) maybe by guid id
+userrole(useridIsString , roledIsString) by guid id
+claim : table have extra info key and value exto add attributes to specific role like number of users for admin is 1 its also to add for specific usere like color may be its not mandatory so may do it or no
+realtion is 1 to many min 5 in p2
+4-cookie authintication or token : u can determine calimes that u store in cookie or token so cookie or idnetity is calim base  
+5- external login like social media in ur website 
+
+
+we will install packages for identity this packages will install module that u will need for secuirty and u will use it
+theses packages for erd above and security module also so u can make migration to find them in ur database
+packages 
+steps min 50 p2
+1- Install-Package Microsoft.EntityFrameworkCore.Tools and microsoft.entityframeworkcore.sqlserver
+2- microsoft.Identity.entityframeworkcore ### install classes for security change depend in ur base u have sql server so its .entityframeworkcore same version for ur framework
+3-  create class application user inherit from identity user so u have attributes and extra attributes
+4- change dbcontext to inherit from IdentityDbContext and take application user  : so u have security  identitydbcontext  have user and role key string
+5- migration
+6- create Account controller (have registeration method maybe latter have login and logout
+7-2 action for registeration get and post  
+8- post method take specifc data not all attributes so make viewModel as RegisterViewModel inside it take what u want as input prameter and inject it 
+these data need to store in database from form so  call usermanager type is applicationUser private readonly UserManager<ApplicationUser> userManager;
+await userManager.CreateAsync()//DeleteAsync //FindAsync many functions here 
+			       //thses function call store then call context then call DB
+u must wait it to finish work get result from it so can complete steps
+
+but userManger wait application user but i have viewmodel so need here to mapping and hi made constariant to save in database on passeord min 1h14
+password***min 1:30
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+options.Password.RequireDigit = false;
+options.Password.RequireLowercase = false;
+options.Password.RequireUppercase = false;
+options.Password.RequireNonAlphanumeric = false;
+options.Password.RequiredLength = 3;
+options.Password.RequiredUniqueChars = 0;
+
+9- create register view
+10- register service or add in program min 1:24 built in
+11- create cookie min 1:33 p2 like rolemanger create rol there is exist signinManagerMapplicationUser> for create cookie inject in constructor
+ if (result.Succeeded)
+        {
+            // ✅ Create a cookie
+            HttpContext.Response.Cookies.Append("UserEmail", user.Email, new CookieOptions
+            {
+                Expires = DateTimeOffset.UtcNow.AddDays(7), // cookie expires in 7 days
+                HttpOnly = true,                            // prevents JS access (security)
+                Secure = true,                              // send only over HTTPS
+                SameSite = SameSiteMode.Strict              // prevents CSRF
+            });
+
+            // Optional: sign in user
+            await _signInManager.SignInAsync(user, isPersistent: false); //
+            return RedirectToAction("Index", "Home");
+        }
+
+
+
+---------------------------------------part 3 login logout and filter for check authintication by cookie and asign users to role 
+
+logout is just link will destroy cookie just one action and make it redirect to login page 
+
+12 -[authorize] :add filter in any action or any url  //must have cookie to excute this url :)
+13- by add middlewar for authintaction before authorization :authintaction  check valid account username and password its diffrent than authorization u enter as who admin or user or how 
+  app.UseAuthentication();//check if u have cookie
+  app.UseAuthorization();
+
+
+14-login  with viewmodel for login for ur fields
+15- create login view
+16 custmize layout authinitcated see things special min 25p3S like loged just see logout
+
+
+
+note if all must have these attributes put it in application user if may some users need claims to be in database and other not need not min 46 these data safed always not removed or distory after some days ..like color put them in claims and read them from cookie and will removed after 15 day
+
+
+
+
+
+
+
+ROLES in min 49p3
+
+
+area subproject inside ur project also upload image from client to wwwroute and saved it and u use name but disadvantage if u removed thismimage   or in DB as string of byte disadvanteage if u use this image morethan one so u store it many times in database    better in wwwroute and database as string name not bytes :(   maybe u need to load video hard to transform vid to bytes
+
+
+host in min 1:27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if u need to know orders for user go inside user and make list of orders and in order make object from application user as 1 to many
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------
+3-publish app to be dll
