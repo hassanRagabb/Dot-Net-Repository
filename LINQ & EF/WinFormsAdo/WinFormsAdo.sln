@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAdo", "WinFormsAdo\WinFormsAdo.csproj", "{9F15B443-3446-435D-8443-A4121820750B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F15B443-3446-435D-8443-A4121820750B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F15B443-3446-435D-8443-A4121820750B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F15B443-3446-435D-8443-A4121820750B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F15B443-3446-435D-8443-A4121820750B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E05964AD-3D53-49A4-8BFA-624483CC243B}
+	EndGlobalSection
+EndGlobal
