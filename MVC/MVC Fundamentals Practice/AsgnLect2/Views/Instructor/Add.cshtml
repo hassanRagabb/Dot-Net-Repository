@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+
+ 
+    
+
+
+
+
+<form method="post" action="/Instructor/Add">
+    <h2>Create Employee</h2>
+
+    <label for="Name">Name</label><br />
+    <input type="text" id="Name" name="Name" /><br /><br />
+
+    <label for="Image">Image</label><br />
+    <input type="text" id="Image" name="Image" /><br /><br />
+
+    <label for="Salary">Salary</label><br />
+    <input type="number" id="Salary" name="Salary" /><br /><br />
+
+    <label for="Address">Address</label><br />
+    <input type="text" id="Address" name="Address" /><br /><br />
+
+    <label for="dept_id">Department</label><br />
+    <select name="dept_id" id="dept_id">
+        @foreach (Department d in (List<Department>)ViewBag.Departments)
+        {
+            if (Model.dept_id == d.Id)
+            {
+                <option value="@d.Id" selected>@d.Name</option>
+            }
+            else
+            {
+                <option value="@d.Id">@d.Name</option>
+            }
+        }
+    </select><br /><br />
+
+    <label for="crs_id">Course</label><br />
+    <select name="crs_id" id="crs_id">
+        @foreach (Course c in (List<Course>)ViewBag.Courses)
+        {
+            if (Model.crs_id == c.Id)
+            {
+                <option value="@c.Id" selected>@c.Name</option>
+            }
+            else
+            {
+                <option value="@c.Id">@c.Name</option>
+            }
+        }
+    </select>
+    <br /><br />
+    <input type="submit" value="Submit" />
+</form>
+`

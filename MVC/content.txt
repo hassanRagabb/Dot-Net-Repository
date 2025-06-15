@@ -1,0 +1,811 @@
+ienumrable is collection
+anything inside tag form have value like input or select  like getElementbyID("dept").Value;
+dev and span paraghrph have innerhtml inerText
+design pattern solve for problems already exist
+disgn principle tell u what to do to not have a problem without steps hi jude
+if u dont have constructore u can create object but if u have just constructore take prameter and dont have default not take when u need to create object must send prameters because defult will not work u dont have it also 
+core: cross platform response and requst fast for middelware in program  and support dependency injection like lect 8 by default buy u inject in constructor by default bu u can inject also in method but need to addthing in ptr like ex actionmethod([frommService] Iemployyreposity emp)
+
+model : moddel classes + repo interface and implemention for this interface all in one folder called repository	
+----lect 2
+strong view
+middelWare
+----lect 3 
+view data Bage and view model
+part2 state managementtemp data session and cookie and 
+----lect 4
+model binding same attributes
+----lect 5
+from client to action [ValidateAntiForgeryToken] 
+best by tag helper with jqeury for binding	uisng js libraries jequsery 	
+
+render body and render section 
+----lec6
+validation page 36	
+1-client side
+2-server side in c#  (ModelState.IsValid()) for anotaion in the classes 	
+3-sql server (constarint) //custom validator  dynamic check control ur values:(							 
+---lect7
+partial view for resuable code for may be details for employee can resue it in index and also in delete ..or navgation can take model
+<partial name="_NavPartial"/> //loosly
+<partial name="_NavPartial" model="Emp"/> IN FOR EACH //
+ajax for select department and hi will display all courses or instructor inside it using partial view
+routing page 81
+---lect 8 page 56 structre
+---lect 9 Filter AND security
+
+
+
+INSERT INTO Departments (Name, Manager) VALUES 
+('IS', 'Manager IS'),
+('IT', 'Manager IT'),
+('CS', 'Manager CS'),
+('DS', 'Manager DS');
+select * from Departments
+
+-- If Course Id is IDENTITY (auto-increment), use this:
+INSERT INTO Courses ( Name, Degree, MinDegree, dept_id)
+VALUES ( 'Databases', 100, 60, 1);
+select * from Courses
+INSERT INTO Courses ( Name, Degree, MinDegree, dept_id)
+VALUES ( 'SQL', 100, 60, 1);INSERT INTO Courses ( Name, Degree, MinDegree, dept_id)
+VALUES ( 'Big data', 100, 60, 1);INSERT INTO Courses ( Name, Degree, MinDegree, dept_id)
+VALUES ( 'Linq', 100, 60, 1);INSERT INTO Courses ( Name, Degree, MinDegree, dept_id)
+VALUES ( 'iretriaval', 100, 60, 1);
+
+INSERT INTO [Instructores] ( Name, Image, Salary, Address, dept_id, crs_id) VALUES 
+( 'Dr. Ahmed Hassan', 'ahmed_instructor.jpg', 8000, '123 Cairo St', 1, 6),
+( 'Dr. Mona Ali', 'mona_instructor.jpg', 8500, '456 Alex Ave', 1, 7),
+( 'Prof. Omar Farouk', 'omar_instructor.jpg', 9000, '789 Giza Rd', 2, 8),
+( 'Dr. Fatma Nour', 'fatma_instructor.jpg', 8200, '321 Mansour St', 2, 9),
+( 'Prof. Khaled Mohsen', 'khaled_instructor.jpg', 9500, '654 Aswan Blvd', 3, 6),
+( 'Dr. Nadia Samir', 'nadia_instructor.jpg', 8800, '987 Luxor Lane', 3, 6),
+( 'Prof. Youssef Gamal', 'youssef_instructor.jpg', 9200, '147 Tanta Circle', 4, 7),
+( 'Dr. Rania Mahmoud', 'rania_instructor.jpg', 8600, '258 Suez St', 4, 8);
+select * from [Instructores]
+
+
+INSERT INTO Trainees (Name, Image, Address, Level, dept_id) 
+VALUES ('John Doe', 'image.jpg', '123 Main Street', 2, 1);
+INSERT INTO Trainees (Name, Image, Address, Level, dept_id) 
+VALUES 
+    ('Alice', 'alice.jpg', 'Street 1', 1, 1),
+    ('Bob', 'bob.jpg', 'Street 2', 2, 2),
+    ('Charlie', 'charlie.jpg', 'Street 3', 3, 1),
+    ('David', 'david.jpg', 'Street 4', 2, 3),
+    ('Emma', 'emma.jpg', 'Street 5', 4, 2),
+    ('Frank', 'frank.jpg', 'Street 6', 1, 3),
+    ('Grace', 'grace.jpg', 'Street 7', 2, 1),
+    ('Hank', 'hank.jpg', 'Street 8', 3, 2),
+    ('Ivy', 'ivy.jpg', 'Street 9', 4, 3),
+    ('Jack', 'jack.jpg', 'Street 10', 1, 1);
+
+select * from Trainees
+
+
+CREATE PROCEDURE InsertCrsResult
+    @Degree INT,
+    @crs_id INT,
+    @trainee_id INT
+AS
+BEGIN
+    INSERT INTO crsREsults (Degree, crs_id,trainee_id)
+    VALUES (@Degree, @crs_id, @trainee_id );
+END;
+
+EXEC InsertCrsResult 85, 6,2;
+EXEC InsertCrsResult 78, 7, 2;
+EXEC InsertCrsResult 92, 8, 3;
+EXEC InsertCrsResult 60, 9, 4;
+EXEC InsertCrsResult 88, 10, 5;
+EXEC InsertCrsResult 33, 11, 6;
+EXEC InsertCrsResult 54, 7, 7;
+EXEC InsertCrsResult 81, 8, 8;
+EXEC InsertCrsResult 67, 9, 9;
+EXEC InsertCrsResult 90, 10, 10;
+select * from crsREsults
+
+
+
+
+
+
+
+.net core ( windwos app ,console ,wpf)  
+over it asp.net core ( web framework opensource ) ==>out all is baed on asp.net core is 1-web app(mvc or razor pages) or 2-web service(web api or signalr)
+cross platform note :web app using razor pages(asp.net core web app) this is the project
+
+maping url: using conrtoller technology name is restfull (url map to method inside class)  note:url is domain/controllername/methodName :domain is http://host:port so u will appear first in seo search engine optimization min 54 so u will go to client fast :microsoft implement this restfull in mvc mapping is reouting but in restfull called mapping : routing engine hi catch url and create object from controller and call method and excute method 
+--------------------------------------------------------------------------------------------------------------------------------------------
+model :business logic classes have functions and connection to database and classes for tables
+
+
+-----------hosting
+hosting isnide properties virtual for developemend also exist self hosting becuase u install proxy server called kestral with vs  till u need to upload ur project in webserver for production maybe iis or apache min 1h:10 day1 part 1 also in webserver exist proxy recive requst and send result to site	
+if u run on  proxy 3latol cmd will open for host ur app but it u host in virstaul express iis will also open in task bar 
+when u publish the properites not go with the project
+
+---------------------------------------
+view need details for specifc product hi send id of it to controller 
+and controller recive hi will take new object from business logic model class inside this action and call the fucntion of it and send the return from business to view to render it so hi can print it 
+note view recive or take copy from business object in properity called @Model ا Model type is dynamic "deanamic means:errors appear in runtimenot in completion" return may be one product so u can use @Model.ProductName or  maybe list  and u must write the attr correct becuse in compile will not discover hi discover in runTime  note : if u dont send obj to view @Model will have null refrence error 
+
+
+-------------- image
+--for attr image save name in obj and image url thatself in www.root so u can just foreach and change the last locate in url using the name of it like src="/Images/@Model.ImageName"  in the class u have the attr called ImageName put u store image in folder called /Images/.jpg min 1h 13 if u  write it as its without slash in first like  Images/.jpg hi willl take the url in this action then appened Images/.jpg not in route so will not print image 
+<input class="form-control"  asp-for="Image" type="file"/>
+--------------
+
+in url simple way append action to root u go to action name not view Name complex tag helper have anchor link or htmlhelper there is action link 
+---------implementation
+
+lecture 1 class product and product businees logic and product controller with get all product and details for each product
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------										 lect2
+
+model as strong not dynamic :model as properity in class parent called razor page its generic alsoo dynamic min 12 to 13 so u inherited all from razor page class  its called loosly type (dynamic) no type no need to cast   so now ur view is strong type when u send the object as list or single or ..by
+razor syntax: @model typeofGeneric ex @model Product or @model List<Product>    m small for generic    but @Model for properity that u work on it means
+@Model is the object itself and the object type using @model small m for generic now it storing type view hi now the model so problems now in compilation time 
+@model urtypeFor generic and u can use it in for of if using properity with capital M STRONG VIEW TYPED NOW autocomplete 
+------------------------
+
+fk min 42 part1 
+[ForeignKey("Departmenthereeeeeeee")]///same name 
+public int DepartmentId { get; set; }
+
+// Navigation property
+public virtual Department? Departmenthereeeeeeee { get; set; } // include it in select so cant be null 
+-----------------------------------
+configureation min 55;
+
+
+install Microsoft.EntityFrameworkCore.SqlServer for db context
+	Microsoft.EntityFrameworkCore.tools   so console can understand add-migration and update database like  also for scafolding
+	Enables these commonly used commands:
+	Add-Migration
+	Bundle-Migration
+	Drop-Database
+	Get-DbContext
+	Get-Migration
+	Optimize-DbContext
+	Remove-Migration
+	Scaffold-DbContext
+	Script-Migration
+	Update-Database
+
+
+
+
+----------------------
+onDelete: ReferentialAction.Cascade);    wrong if department canceled all employee will removed its wrong also if student canceld exams will removed for him so onDelete: ReferentialAction.NoAction);   and developer will deal with this exception bt try and catch in that time  u can make new column as isDeleted default is false when u delete it make it as true this called soft delete or make them to another department but onDelete: ReferentialAction.Cascade); called hard delete also when u delete may need to delete from fk and also fk has another fk till u get to cycle and add migration will stop error dont now where to start 
+and when u retrive data retrive that isdelted is false
+------------------------------------------------------------------------------- midelware
+pipleine functions in main 
+custom
+app.Use(async(httpcontext,next)=>
+{
+//send cookies
+httpcontext.Requst.cookie;
+// write on response
+await httpcontext.Response.WriteAsync("1) middelware custom 1");
+//call next
+await next.Invoke();
+});
+
+to terminate
+app.Run(async(httpcontext)=>{
+// write on response
+await httpcontext.Response.WriteAsync("2) middelware terminate custom 2");
+});
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------																			 lect3
+
+pass data another method not just product or product list many types to one view
+FOR SEND EXTRA INFO	like string or int...another list
+1- ViewData inherited from contoller as properity type of dictionary many recoreds as collection stored in ViewData have key value  key is string and value is     object from anytype take from ViewData copy and send it to view with the model but the return from ViewData is object u need to make casting  and u inherit from razor page at the view from the auto enerated class classView_controlName_actionName a properity called model type is dynamix  and also u inherit from it @ViewData set in action and get in view page like read   :note also model like product go to view by view data mi 19 part1 
+public IActionResult Index()
+{
+    List<Instructore> instructors = context.Instructores.Include(i => i.Department).Include(i => i.Course).ToList();
+    List<Department> departments = context.Departments.ToList();
+    List<Course> courses = context.Courses.ToList();
+    
+    string messagee="hi"
+    ViewData["msg"]=messagee
+  ViewData["PageTitle"] = "Instructor Dashboard"; //////string
+
+    ViewData["Insts"] = instructors;
+    ViewData["Departs"] = departments;
+    ViewData["Cours"] = courses;
+
+    return View(products);
+}
+view page 
+@model List<Product>
+<!--view data -->
+<h2>message:  ViewData["msg"]</h2>
+ 
+@foreach (var inst in (List<Instructore>) ViewData["instructors"])############note : ViewData["instructors"] is object so need cating becasue foreach loop not loop in object  
+    {
+        <tr>
+            <td>@inst.Name</td>
+            <td>@inst.Department?.Name</td>
+            <td>@inst.Course?.Name</td>
+            <td>@inst.Salary</td>
+        </tr>
+    }
+
+
+
+var departments = ViewData["Departments"] as List<Department>;
+var courses = ViewData["Courses"] as List<Course>;
+
+viewdata inherited in class contoller and in view inherited from razor page
+disadvantage of viewdata is the casting for each objects and must call it with the key 
+--------------------------------------
+2- ViewBag another properity type is dynamic not dictiobary this properity inherited in class contoller and in view inherited from razor page 
+get from dictionary (read from view data) and set also in view data 
+therefore viewbag is viewdata but in razor is dynamic no need to access it like  ViewData["msg"] its acces by @ViewBag.msg no need here to cast its dyncamic  and set also ViewBag.msg="hello" its layer above viewdata also use in set and get viewdata for creation and read rabber on viewdata
+so u can decalre with viewdata and read in razor bage by viewbag without casting its already casted dynamic
+cast for dynamic through runtime
+------------------------------------- send from action to view
+1 and 2 have disadvantage if null or u access key not send in action will print null so this viewmodel exist
+3-ViewModel original model with the extra info so make castmize class have properites like keyless 
+here u can send 2 model toghether as merge also u can filter properity before sending may need send just 1 attribute
+
+in company use this make full project for viewmodel min 57 dont send the full object of dept or emp or ..just write any attributes from any object becasuse map and validation will be complext hard
+and in action decalre this viewmodelClass and access what u want from these attributes and send this object to view page by @model namespaceName.folderofViewModel.ClassNameViewModel 
+or @using namespaceNameforurViewModel then @model ClassNameViewModel or 3 way put this using in file _Viewimpoart for ur folder namespace min 1h:03becasue u created this folder not like model folder for product or for class category so u can access attr like <h1>@Model.PageTitle</h1>
+
+
+also used for sending data from view like Post Or query  string or hidden field
+------------------------------------------------------------------------
+part 2 state management
+by1- tempdata  : life time is just read it will be killed or peak or keap used for send data from controler to any controller u read from cooky like saved messages when add product saved in cookies  but u must set it first when hi go to action hi set it :( so u can read it also in view page stored in cooky by default but u can store in a server session 	life time when u readit or session ended
+2-session  min 53 part2 can read in any where action and view lifetime per app session by default 20min stored in server###
+builder.Services.AddSession(); // Adds session services
+or add optional cofiguration like
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Timeout
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true; // Required for GDPR compliance
+});
+
+
+app.UseSession(); // Add before UseEndpoints or UseRouting
+app.UseRouting();
+
+
+set session in action stored in server
+HttpContext.Session.SetString("UserName", "Alaa Sabry");
+HttpContext.Session.SetInt32("UserId", 123);
+ get session  in any action 
+string? name = HttpContext.Session.GetString("UserName");
+int? id = HttpContext.Session.GetInt32("UserId");
+get it in view page
+@Context.Session.GetString("UserName");
+
+3-cookies min 1h:10 like session default life time like session 20min but u can have lifetime big than session maybe 15days by added configuration option
+like remember me  stored in client###### each wep app have his own cookies like key 
+4-querystring to send data from url to action
+5-hidenfield also used for sending from view to controller 
+6 post to send data from form to action
+
+asignment at min 1h:25 git course result
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+mvvm with wpf
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+											 lect4
+----------------------------------------------------------------
+public IActionResult CoursesDetails(int id){
+ // Get all course results for this trainee
+    var courseResults = context.crsREsults
+        .Include(r => r.Course)
+        .Where(r => r.trainee_id == id)
+        .ToList();
+
+TranineecrsGrades.Grades = courseResults.Select(r => r.Degree).ToList();
+TranineecrsGrades.Courses = courseResults.Select(r => r.Course).ToList();
+TranineecrsGrades.Colors = courseResults.Select(r => r.Degree > 60 ? "green" : "red").ToList();
+    return View(TranineecrsGrades);
+}
+
+var courseResult = context.crsREsults
+		   .Include(r => r.Course)
+		    .FirstOrDefault(r => r.trainee_id == id && r.Course.Name == "Databases");
+
+
+----------------------------------------------------------------------------------------read data form from view or html to action
+-------------------- send data from html to server
+model binding :is a class for map action prameter with same name from request data prameter same name in method and in url or anchor tag    url data in local tab
+source
+take data from html to server then model or database like form and feedback login register comment admin work like add products delete update remove...
+1-in form t method get and post : note get take query string like  url?name="hassan"&salary=21212  note attr name is the input form name and also salery is 				the name for an input inside the form 
+			        in post also hi send these attributes but in requst body hidden as json hidden not in the url  
+				if u search u can send it by get in url put if its secrit data like login use post methods
+in get called query string its in url same attribute name
+in post called form data its hidden in body requset
+2- in anchor tag u can send data from client to server also <a href="url/1?name=""hassan" //1 here is rooteValues and this after? name=""hassan is query string
+3- u can send data also using ajax by ( jequery or js)  called ajax data its like qurey string
+
+when hi submit or press in link these data put in object called requst in c# but u dont deal with this req obj u deal with model binding replaced to requst.querystring or requst.formdata u now deal with model binding hi go to form data then routedata then querystring  use same name for the attribute for search min 15 if hi not find this value hi put deafult
+
+
+type of binding  in 2 steps value provider for collect data from requst and and model binders for populate values to the action but must same name 
+1-primitive like int ,string ,string[]array and list : u send array in url as color=red,color=blue if u repat hi take the first if its not an arry like juststring
+2-collection like dictionary have key value url be like phone[hassan]=1234&phone[sayed]=12121 here key is hassan but not in ""
+3- binding in model or custom class :min 43 will look in url for attributes in this class not find be as default
+if u have class have 5 attribute and u send all of them in url but u just need to read from url 2 and the 3 neglict them as default value like null or zero using Bind ex public IActionRsult details ([Bind(Include:"id,name")Employee e){return view()}
+u can make u own model binding for read maybe from cookies just inhert grom model binder and make ur own implementation
+--------------------
+----------------------------------------
+----------------------------------------
+part 2  edit
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" /> /////hiden id or send it with action as url beside the post
+
+
+print list from categores for edit product as example send list from categores in action in viewBag or model or anything and make selct becasue u will just send id to model :) loop on viewBag like
+ViewBag.Departments = context.Departments.ToList();
+ViewBag.Courses = context.Courses.ToList(); 
+
+
+<select name="dept_id" id="dept_id">
+	@foreach(Department d in List<Department>ViewBag.deptList){
+		if(Model.dept_id==@d.Id){
+			<option value="@d.Id" selected>@d.Name</option>  ///////////////////
+		}else{
+			<option value="@d.Id">@d.Name</option>  /////////return to server id not name :(
+		     }
+	}
+</select>
+
+note : in client side we work with the id in form for validation but in server we work in form with Name in form must be like attributes in the model so make id and name same like model will be good
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+											 lect5
+
+from client html to action another method
+
+1-html helper(pure html) support i  framework and core
+- the view inherit like Model و viewData , viewBag another object called @Html have DropDown,select,checkBox
+....page 26 imporvement for model binding no need to input in form he search for value in viewData , viewBag ,Model not found will return null its loosly type helper 
+u work by it when need to work in properity not in ur model like search	text box also can work in model like salary but u must write it correct as in model  ---> @Html.textbox("salary") its loosely type helper to work in strong type by deifne @model like product then @Html.textboxfor("p=>p.salary") auto complet note:@Html.labelfor(d=>d.name) will make label same name as attribute in model u can change it as u want by [display(name="enter dept name")]
+@Html.textbox()===>loosly type no auto coorect no model in no @model like product
+@Html.textboxfor()strong must have @model like product for auto complete
+@Html.ActionLink("back","action name","controller name",new{dept=11,id=1},new{@class="btn btn-succes"} 
+disadvantage: u like repeating the code like u make @Html.textboxfor() so u also in <input> make this 
+
+2-Tag helper:condtion u work in strong view  must have @model like product for auto complete (asp-) for core only min 48p1 at the end 
+u add in <input name="Name" type="text" value="@Model?.Name"/>   will be
+<input asp-for="Name"/> //name here in model hi will create for u name and id and also value and also type of Name if it string okay if u have[DataType(type="password")] okay its like editor in html helper
+u add some attributes related to server razor engine will catch it
+all start with asp- its like editorfor in htmlhelper
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 						part 2		
+
+
+
+-----------------------------------------part 2 add new product form using  Tag helper and asign list from department to choose from it like
+@model Employee
+List<Course> Courses = context.Courses.Include(c=>c.Department).ToList();//Department nav properity
+
+@{
+    ViewData["Title"] = "Add";
+    SelectList deptList = new SelectList(ViewBag.DepartmentsDropDownList, "Id", "Name");// casting to ienumeramble of selected list search about id and 												//printed will be name of department
+                                                                                        //option the id and value is name
+}
+
+ <div class="form-group">
+     <label asp-for="Department_Id"></label>
+     <!-- <input asp-for="Department_Id" class="form-control" /> --> //Department_Id fk as int  
+     <select asp-for="Department_Id" asp-items="deptList" class="form-control"> //Department_Id fk as int 
+         <option value="0">select department</option>
+     </select>
+    
+ </div>
+------------------[ValidateAntiForgeryToken] 
+to protect other websites to take ur data and update in it like store it in another database also min 35 part2
+[ValidateAntiForgeryToken] by Tag helper and also in html helper put puure html no token creation in it hidden filed have string and value in the form  put it only for post method not in get becasue get just open view not call database 
+
+assignmint for course add annd edit course
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---------- layout min 44
+@renderbody function in razor page
+each user his his own layout coz each view or page has properity layout u can define in it the name 
+put it in _ViewStart his name of attribute and make this name in shared and make renderbody in sharedand access this shared in ur view 
+
+for advertisement rendersections a3lanat becsuae render body call just one time cant call more than one each place make for him special section with specific name cant reapaet 
+@RenderSection("Menu",false) in ur _layout //false here for optional u can make it or no but default is true u must implement it
+
+in page ur content by
+@section Menu{
+ ur code 
+@model.Name
+<h1>hhhh>/h>
+}
+@section footer{
+
+}
+
+demo at min :1h:20 day 5 part2
+---------------------------------
+
+
+javascript for front ajax for server  like when u select department need automatic to know courses from database so need to use ajax for server call action by ajax return json :(
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+validation page 36	
+1-client side
+2-server side in c#  (ModelState.IsValid()) for anotaion in the classes 	
+3-sql server (constarint) //custom validator  dynamic check control ur values:(
+										 lect6
+validation type in 3 layers also (mvc)
+1-required
+2-check
+3-data type
+4-uninqe  ---->server side
+5- compare like confirm password
+6- check data found in database ---->in server side
+7-  pattern :regular expression like pattern any pattern fax email ..
+8- int check range(18,100)
+9- min length =3
+10-maxlength=50
+...
+..
+
+in model write condtions validate properites required int..
+in view if hi insert false Display to him errors 
+in controller take from view and check the condtions in model validation in post method not in get method by using properity in contoller called modelstate like viewbage ... but in modelstate  action must be complex like class for innotation not string or int 
+modelstate  is dictionary have key as properity for model min 28 p1 and value is the validation for each properity "key"
+primitive always valid must take complext model for validation 
+but note when create viewmodel class{
+
+string tranieeName= traner.name //will not check validation inside model in traner hi only check in the string so no validate here
+
+modelstate have attribute called couNTofERROR FOR EaCH FIELD called modelstate.IsValid()>0 if it true here count error >0 will be here an error
+
+
+
+to print error messages by tag helper like
+    <span asp-validation-for="Name" class="text-danger"></span>  if u need to mention all errors must ur div print summary as list ex <div asp-validation-summary ="None">//="None" for print no error
+        ="ModelOnly">//related to model
+        ="All"> //for custom and also for model class this dev have all errors in form iinside it have all inputs text box
+example to print error 
+label asp-for="Name"></label>
+<input asp-for="Name" class="form-control" />
+ <span asp-validation-for="Name" class="text-danger"></span>  
+
+-------CUSTOM validator error
+any validator related to database will be custom like retrive min and max for sallary like cant save in database throw exception in catch send error 
+modelstate.AddModelError("Name","insert valid name ya 3m") //if u now the key like Name will added to name also with the class model but if u dont know where is the error make key as string empty like modelstate.AddModelError(string.Empty,excptional.message.tostring()); in catch if key dont know the key will print in teh dev summary but if u hi found input hi will contact with it in span also if u make it as modelstate.AddModelError(string.Empty)
+
+all these above must click on submit to show u errors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+									part 2
+
+-------- validation
+part 2 valiadtion in also client side before click submit to display u errors or hints in client side by javascript
+by just asp-for provide for u data val in client before submit 
+
+min14 add jequery in render section to dont include jequery more than one
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+-------- custom validation
+1-if not found built in attribute like check sallary >2000 
+2- avlidate based on database becasue validate dont know ur database or cols inside it
+
+solved by 
+1-validation attribute  min 25 also in min 33 make class page 42   work in server side scope only no client  after post will appear in client side
+u go with full object  may comapare salary with the peartment so u need object as whole  
+2- Remote work in server side mvc scope only but calling when text change using ajax if u put it in salary any change in salary will call this validation
+its server side but calling inside the client like check salery > 2000  its get method not post because ajac calling only get min 44 u must put jquery for validation inside client side
+if u need to add field with field also 52 like compare deptid with salary but here u must put [remote ] above the 2 attribute so any chnage in salary or dept will check the other also
+
+modelmetadata min 1:13 to put annotation in another class 
+asignment 1h:5
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+									lect 7
+partial view page 73 : resuse code no dublicate in shared folder  _NavPartial if u put it in employee it will can seen in emp views only no other controller can see it :the diffrent between it and view that partial dont hava layout it will be child in view that have layout so no need to double code
+resuable view can be child in other views like navbar in layout u can make it and need to edit in the partial view to small compnentent and common code to be in partial view like component
+put it in shared views small compnentent
+return partialview()
+
+to render it using as html content by 
+1- html helper in core and framework
+@HtmlPartial("_NavPartial") :to render it using as html content by 
+or
+@html.RenderPartial("_navPartial") //return void or task so u must put it in block of code to see what she will return like or make it async without block of code
+@{
+@html.RenderPartial("_navPartial") ;
+}
+2- tag helper :best for core
+<partial name="_NavPartial"/> //loosly
+<partial name="_NavPartial" model="Emp"/> IN FOR EACH //
+
+
+
+partial view is view dont have layout but have types:
+1- loosly 
+2- strong
+
+
+details page as partial view and inherit or resue it in index and edit pages or any place 
+--------------------------------------------------------------------------------------------------------   ajax
+
+using ajax : no refresh its partial requset by xmlhttprequset and the resonse xmlhttpresponse but content is json or xml so page will change by the response without refresh not old httprequset return is html so u will refresh but in ajax we use xmlhttprequset so no refresh 
+ex: when u click in dept name show u all emps in this department without redirect to new page same page without refresh also 
+ex : page 81 select department show u courses in this department based ajax min 10 part 2 to min 24
+
+ajax need (url , requst: type"get or post", Data : for send maybe if u have , status code for response sucees 200 to 299 failed is 400 to 599
+
+when u click in emp NAME WILL show u details in same page without refresh hi will call server :( min 54 part1
+<a href="#" onclick ="GetDetailsFunction(@item.Id)">@item.Name<a>
+<div id="devhaveIDtoRenderInITemployeeDetailsContainer"></div>     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function GetDetailsFunction(empId) {
+	event.preventDefault(); // dont make link default for the link dont href u3niii  dont go to # 
+        $.ajax({ // u must put jequery 	before it 
+            url: '/Employee/DetailsUsingPartial/' + empId,  // url for action this action return partial view  or json so no layput but here redirect to partial content without layout :( 
+ 	    //data :{"id"=empId},  u can send empId in data like so remove from url many attributes like name id age ...
+	    type: 'GET', //default 
+            success: function (result) ///anonymous function have the returned response default is json :  using dom u will render it anywhere u want
+		   { 
+            	    $('#devhaveIDtoRenderInITemployeeDetailsContainer').html(result);  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			//or document.getElementByid("devhaveIDtoRenderInITemployeeDetailsContainer").innerHtml=result
+                   },
+            error: function () { //error in response
+                alert('Failed to load employee details.');
+            }
+        });
+    }
+</script>
+
+
+or
+<button onclick="loadEmployeeDetails(1)">Load Employee Details</button>
+<div id="employeeDetailsContainer"></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function loadEmployeeDetails(empId) {
+        $.ajax({
+            url: '/Employee/DetailsUsingPartial/' + empId,  ///////////////here retrun is action return of him is partial content without layout :( u can send empId in data like
+ 	    data :{"id"=empId},
+            type: 'GET',
+            success: function (result) {
+                $('#employeeDetailsContainer').html(result);
+            },
+            error: function () {
+                alert('Failed to load employee details.');
+            }
+        });
+    }
+</script>
+
+
+
+----------------------------------------------------------------------------------------------------------- part2
+min 25 assign for ajax when instructor choose dept display all courses in this department
+Routinf :custmize route  min 25 page 81
+2 middle wares
+1- end point :CALLED by default from MapControllerRoute to declare routes :stuf or teachers tell security man all locations and buildings
+2- route :called UseRouting in main recive requset and go to end point  like employee/details/1 will go to step 1 end point to match specific route  if this exist to know the calss and method and send them to end point to excute :security man 
+-then  ecxute required route 
+
+
+how to make route page 82 
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+									lect 8
+-lect 8 page 56 structre
+
+
+1- dependency injection
+mvc features
+1-soc:   seprate of concern
+2- test unit  : see expected result for expected values and now the problems but mvc support it by contollrs and actions url
+3- dry : dont repaet urself like validation in model and check in contoller also in partial view need to see it in database 
+dont deal with context inside contoller dont deal with database dont get any thing inside controller so make service layer called repositry with name of u class that u want to deal with it inside database ex employeeService or empRepositry class to deal with context and inside controller deal with this service have methods add get search by name id get department for emps ...
+  
+repositry name (repositry ,business layer , service,)  realated to model :( not contoller 
+
+
+principle :
+1: solid : min 40
+s : single responsibility principle : ex contoller each controller now his job just single emp or single dept also for oop each thing is one kabsola and repositry also have his own job
+o : open closed principle : make interfaces or abstract as u wanna add new feature updated without change in old code : add new feature without change in old and not work
+l : liskov substitution principle : inheritance child must work like parent class  inheritance and polymorphism ex: parent File 2 method(Read ,write) 2 child 1 is image have the 2 put need another child for read only but hi inherited write u can throw exception when need write so its problem here  so in this problem solved by make te parent as 2 classes one for read and other for write
+and implement what u want 	
+i : interface segragation principle - implementation  interface has 2 functions any class implent this interface must implement the 2 functions so here dont make all function in just one interface make sepration split and class who need implent what hi need 
+
+d : dependency inversion principle : 3ks shaqlb dependent :dont depend in other depend on urself ex class A have object from class B so class A depend on B   P IS part from A :a is high level and b is low level and if b drop a will be empty hole so this is violation for this principle  
+class B{}
+Class A {B obj=new obj} this problem
+
+solved by depend in abstraction like interface or abstract class but u cant inherit more than one butu can impement many interfaces so choose interface is best 
+ex interface IB {
+
+} 
+class B:IB{
+
+} //implement
+
+class A{
+IB b; //GIVE ME any one who implement IB inside A SO now u depend on interface also u can depend on abstract class 
+        // obj will determine through runtime can make new 
+}
+main : in console
+A objectA= new A();
+objectA.b= new B();// now u determine it through runtime  u can change new B realted who implement IB U MAKE Dependency wait to runtime not like above u make the new in the class itself
+
+but IN web mvc we ask container not main console hi will send the type of b 
+
+so in employeecontroller depend on employeeRepositry its problem need to solve
+ 
+steps
+1 make first  interfaces for each contoller u have ex: IEmployeeRepositry put defintion for function only as prototype getall without body no public for function any needed function also here like crud or search by id ...
+2- make service or repositery that implement these interfaces 
+3- controller take here object from interface not take from child that implement this interface but new with child not now in this controller class need to make it wait:):( 
+take it as object in constructore type of interface  but hi cant make creation for these objects page 65 so we go to dependency injection for this problem 
+-------------------------
+2: ioc principle :(inversion of control) no class depend in another class also 
+loosly coupled not tight so easy to test may be with fake database also good maintain and creation for object be in container in mvc or in main for console
+many patterns exist to apply ioc
+design patterns so appl ioc
+1-service locator
+2-factory pattern : like builder need to create controller so we have controller of factory to create it we have it already
+3-abstract factory  : for dependency inversion principle
+4-template method : 
+5-startegy
+6-dependency injection we take this 
+
+tight to loosly
+step 1 : factory pattern : like builder need to create controller so we have controller of factory to create it we have it already
+step 2 : ur classes implement dip implement dependency inversion principle by abstraction
+step 3 : implement dependency injection pattern here when u need to have a window "class"dont make it"dont create the class" buy it from step 4 
+if u dont have constructore u can create object but if u have just constructore take prameter and dont have default not take when u need to create object must send prameters because defult will not work u dont have it also  hi will ask ioc container like model binding 
+
+step 4 : use ioc container // comment for all new word that make this window"comment new class()" so u will need to buy it so dont create we will ask someone to give it to u as inject by requst or ask for ur window "class" 
+u can inject in default in constructore
+1- constructor : ask for object in constructor as object page 65 but u will face error min 13 part2
+2- - inject in properity
+3- in method as prameter function take employee its called inject by employee
+
+----------------
+if u dont have constructore u can create object but if u have just constructore take prameter and dont have default not take when u need to create object must send prameters because defult will not work u dont have it also  hi will ask ioc container like model binding  ioc have class called serviceProvider inside it anything u have so u can inject from it So now controller factory will deal with service provider to make creation for these objects
+
+serviceprovider
+1-register : like add  this operation service in container made in program file
+2-ask : called inject service when if u add it before u will be resolve "give it to"  so hi create u obkect
+3-dispose : Distroy the created object after u finish u work   
+----------
+added or register service in program :
+1- built in service u just need to ask  like IConfiguration for read from appsetting
+2- built in but not registered in ioc like add session add it before use also like context may u will not work as sql  min 58
+3- custom service need to make and add also so hhhhhhhhhhhhhhhhhere we go  ex 
+   builder.service.addScope<interfaceName,ClassImplementThisInterface>(); //when someone called this interface create object to him from this class that implement this interface
+// 👇 IoC container configuration (this is the IoC part)
+register :
+
+herereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeee
+eeeeee
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();//u can make this EmployeeRepository related to mockdatabase and in controller for add and deleted to try it 
+ask in constructor like 
+public class EmployeeController : ControllerBase
+{
+    private readonly IEmployeeService _employeeService;
+
+    public EmployeeController(IEmployeeService employeeService) // <- Injected by IoC hereeeeeeeeeeeeeeeeeeeeeeeeeeee so u can create it replace the new word 
+    {
+        _employeeService = employeeService; //resolve or injected
+    }
+}
+
+dispose :first how u add the object by
+1- addscope : when u ask for service in each inject hi create object per requset    if u called constructor many times hi will give u many objects like (: means many inject 
+	      ex public EmployeeController(IEmployeeService employeeService1, IEmployeeService employeeService2)) //2 created objects in this requst
+              also u can inject in view page by @inject IEmployeeService employeRepo so if u have created in action and view the scope method give u same object after requst destroy
+	     summary create one object from service per each requst with u till u close server so go to min 47 id that u send in viewbag for this attribute to be display in view be same if 	     u inject it in view page 
+
+
+2-addTransiant service : create obj for each inject  even if they are in same requst if u send id in viewbag and inject the model in viewpage it will be another id :(  like another object min 41p2  also min  so its create many objects 
+3-addSingelton: like shared object create Only one object for all client and diffrent requst take the same object and hi destory after server close
+
+guid id is class that give u serial id for each object same object have same serial like shared object have same serial id :(
+-------------------------------------------------------------------------------------------------------------------------------------------------
+inject in method action by
+actionmethod([frommService] Iemployyreposity emp) hi will ask IOC container not model binder :)
+
+
+
+
+
+
+
+
+note : we have 2 constructore in context default take from onconfigure but the second class we will write it 
+hi ask another object in constructore need to inject and access
+
+
+asignment related to course iticontext and any object need repositry and interface 
+repo interface and implement all in one folder called repository	
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------								------------------------------------------------------------------------------------------------------------------------------------
+									  lect 9
+1-Filter : some code or checking or anything that excuted before and during and after the action its not middleware 
+middleware its delegates pipline for ur requst till short circut
+
+
+
+------------------------------------------------------------------------------------------
+2-security (identity support for ..login register confirmatiion make login in core its code first old is database first just write commands
+exist filter after press url for an action  u know u by cookie till be expired because mvc is stateless 
+
+user and role : many to many may one user have many roles so we make the third table called userrole have userid and roleid
+identityuser(useridIsString,username,password,email,telephone,...) for all userres main feature
+identityrole(idISstring,rolename) maybe by guid id
+userrole(useridIsString , roledIsString) by guid id
+claim : table have extra info key and value exto add attributes to specific role like number of users for admin is 1 its also to add for specific usere like color may be its not mandatory so may do it or no
+realtion is 1 to many min 5 in p2
+4-cookie authintication or token : u can determine calimes that u store in cookie or token so cookie or idnetity is calim base  
+5- external login like social media in ur website 
+
+
+we will install packages for identity this packages will install module that u will need for secuirty and u will use it
+theses packages for erd above and security module also so u can make migration to find them in ur database
+packages 
+1- microsoft.entityframeworkcore
+2- microsoft.Identity.entityframeworkcore ### install classes for ecurity change depend in ur base u have sql server so its .entityframeworkcore same version for ur framework
+3-  
+---------------
+3-publish app to be dll
+
+
+
+
+
+testable and maintainable and solid function with layers using injection : but performance be less but not big beacause created objects many but they distroy after u finish ur requst
+
+
+
+
+
+
+
+
+
+
+
+
+

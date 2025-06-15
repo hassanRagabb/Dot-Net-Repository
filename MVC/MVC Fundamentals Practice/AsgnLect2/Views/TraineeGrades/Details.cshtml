@@ -1,0 +1,26 @@
+﻿@model TraineeCourseGradeViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<h2>@Model.traineeName's Course Grades</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Course Name</th>
+			<th>Grade</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (int i = 0; i < Model.Grades.Count; i++)
+		{
+				<tr style="color:@Model.Colors[i]">
+					<td>@Model.Courses[i].Name</td>
+					<td>@Model.Grades[i]</td>
+					<td>@(Model.Grades[i] > 60 ? "Passed" : "Failed")</td>
+				</tr>
+		}
+	</tbody>
+</table>
