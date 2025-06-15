@@ -1,0 +1,409 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\accountuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\accountuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\bindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\bindcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\departmentwithemployeesdtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\departmentwithemployeesdtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\migrations\\iticontextdbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\migrations\\iticontextdbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\repositories\\emoloyeerepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\repositories\\emoloyeerepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\contextdb\\iticontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\contextdb\\iticontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\models\\itientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\models\\itientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\services\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\services\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\viewmodel\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\viewmodel\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\jwttokienlec3.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\jwttokienlec3.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\authintcation\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\authintcation\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\jwttokienlec3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\jwttokienlec3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|d:\\null\\dotnet\\github repo\\mvc api\\2- authontication by jwt\\jwttokienlec3\\jwttokienlec3\\migrations\\20250531140154_auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1041D8B0-FFE1-4247-B164-39371A24F749}|jwtTokienLec3\\jwtTokienLec3.csproj|solutionrelative:jwttokienlec3\\migrations\\20250531140154_auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 387,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:50:24.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:49:58.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentWithEmployeesDTOController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\DepartmentWithEmployeesDTOController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\DepartmentWithEmployeesDTOController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\DepartmentWithEmployeesDTOController.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\DepartmentWithEmployeesDTOController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:49:36.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BindController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\BindController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\BindController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\BindController.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\BindController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:49:02.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountUsersController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\AccountUsersController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\AccountUsersController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\AccountUsersController.cs*",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\AccountUsersController.cs*",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAIwJcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:04:59.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\appsettings.json",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\appsettings.json",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\appsettings.json",
+              "RelativeToolTip": "jwtTokienLec3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-31T13:41:29.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAHQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:49:19.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITIContextDBModelSnapshot.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Migrations\\ITIContextDBModelSnapshot.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Migrations\\ITIContextDBModelSnapshot.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Migrations\\ITIContextDBModelSnapshot.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Migrations\\ITIContextDBModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:16:25.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmoloyeeRepositories.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Repositories\\EmoloyeeRepositories.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Repositories\\EmoloyeeRepositories.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Repositories\\EmoloyeeRepositories.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Repositories\\EmoloyeeRepositories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:23.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "jwtTokienLec3\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:48.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "jwtTokienLec3\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:39.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Program.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Program.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Program.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAYwF4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:42:17.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Models\\Employee.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\Employee.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:00.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Models\\Department.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\Department.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:50:49.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITIContextDB.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ContextDB\\ITIContextDB.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\ContextDB\\ITIContextDB.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ContextDB\\ITIContextDB.cs",
+              "RelativeToolTip": "jwtTokienLec3\\ContextDB\\ITIContextDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:52:06.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITIEntity.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\ITIEntity.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Models\\ITIEntity.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Models\\ITIEntity.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Models\\ITIEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:41:51.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmployeeManager.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Services\\EmployeeManager.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Services\\EmployeeManager.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Services\\EmployeeManager.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Services\\EmployeeManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:31.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoleViewModel.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\RoleViewModel.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\ViewModel\\RoleViewModel.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\ViewModel\\RoleViewModel.cs",
+              "RelativeToolTip": "jwtTokienLec3\\ViewModel\\RoleViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:51:54.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "jwtTokienLec3.http",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\jwtTokienLec3.http",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\jwtTokienLec3.http",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\jwtTokienLec3.http",
+              "RelativeToolTip": "jwtTokienLec3\\jwtTokienLec3.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-31T15:26:12.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C# MVC CORE\\lect 9 security\\identityLect9\\identityLect9\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:13:19.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250531140154_auth.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Migrations\\20250531140154_auth.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Migrations\\20250531140154_auth.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Migrations\\20250531140154_auth.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Migrations\\20250531140154_auth.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAgwM4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:01:54.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Authintcation\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\Authintcation\\ApplicationUser.cs",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\Authintcation\\ApplicationUser.cs",
+              "RelativeToolTip": "jwtTokienLec3\\Authintcation\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:48:53.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "jwtTokienLec3.csproj",
+              "DocumentMoniker": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\jwtTokienLec3.csproj",
+              "RelativeDocumentMoniker": "jwtTokienLec3\\jwtTokienLec3.csproj",
+              "ToolTip": "D:\\NULL\\dotnet\\GitHub Repo\\MVC API\\2- Authontication By JWT\\jwtTokienLec3\\jwtTokienLec3\\jwtTokienLec3.csproj",
+              "RelativeToolTip": "jwtTokienLec3\\jwtTokienLec3.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-31T13:39:56.719Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
